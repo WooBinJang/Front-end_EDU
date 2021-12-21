@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+#list1 {
+  width: 300px;
+  border-bottom: 2px solid #000;
+  border-top: 2px solid #000;
+  margin: 50px auto;
+}
+
+#list1 > li {
+  height: 50px;
+  border-bottom: 1px solid #000;
+  padding-left: 40px;
+  line-height: 50px;
+  background: url(./image/list2.png) no-repeat 10px 17px rgb(188, 58, 33);
+}
+
+#list1 > .last {
+  border: none;
+}
+
+#list2 {
+  width: 400px;
+  border-bottom: 2px solid #000;
+  border-top: 2px solid #000;
+  margin: 50px auto;
+}
+
+#list2 li {
+  height: 50px;
+  background: url(./image/list_bg.gif) no-repeat #f80;
+  border-bottom: 1px solid black;
+  padding-left: 50px;
+  line-height: 50px;
+}
+
+#list2 > .list2-2 {
+  background-position: 0 -50px;
+}
+
+#list2 > .list2-3 {
+  background-position: 0 -100px;
+  border: none;
+}
+
+#list3 {
+  width: 300px;
+  border-bottom: 2px solid #000;
+  border-top: 2px solid #000;
+  margin: 50px auto;
+}
+
+#list3 > li {
+  height: 40px;
+  padding-left: 30px;
+  line-height: 40px;
+  color: white;
+  border-bottom: 1px solid black;
+  background: url(./image/li_bull.gif) no-repeat 10px center green;
+}
+
+#list3 > .last {
+  border: none;
+}

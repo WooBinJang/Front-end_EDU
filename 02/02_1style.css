@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #999;
+}
+.box {
+  background-color: white;
+  width: 500px;
+  margin: 0 auto;
+  border-bottom: 2px solid black;
+  padding: 70px;
+}
+
+.title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.des {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.more {
+  color: #f00;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+}

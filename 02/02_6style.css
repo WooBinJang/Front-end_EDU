@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ol,
+dl {
+  list-style: none;
+}
+
+.travel-box {
+  width: 900px;
+
+  margin: 0 auto;
+}
+
+.travel-box-top img {
+  margin: 0 auto 20px;
+}
+
+.travel-box-top p {
+  background-color: orange;
+  padding: 40px 10px;
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.travel-topic {
+  background-color: rgb(179, 190, 169);
+  padding: 30px 200px;
+  text-align: center;
+  font-size: 15px;
+  border: 1px solid rgb(218, 208, 153);
+  margin-bottom: 10px;
+}
+
+.travel-box-bt > ol {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+.travel-schedule {
+  margin-bottom: 30px;
+}
+
+.travel-schedule > li {
+  list-style-position: inside;
+  font-size: 16px;
+  margin-left: 20px;
+  line-height: 22px;
+}
+
+span {
+  font-weight: bold;
+}
+
+.travel-audit-box {
+  padding: 30px 200px;
+  text-align: center;
+  border: 1px solid gray;
+  margin-bottom: 20px;
+}
+.travel-audit {
+  margin-bottom: 30px;
+}
+
+.travel-audit > li {
+  list-style-position: inside;
+  font-size: 16px;
+  margin-left: 20px;
+  line-height: 22px;
+}
+
+strong {
+  font-size: 30px;
+  font-weight: 500;
+  color: orange;
+  margin-bottom: 20px;
+}
+
+dt {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 2;
+}
+
+dd {
+  font-size: 16px;
+}

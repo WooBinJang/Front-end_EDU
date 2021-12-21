@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.price-box {
+  max-width: 300px;
+  margin: 0 auto;
+  border: 2px solid #000;
+}
+
+.top-area {
+  padding: 40px 0;
+  text-align: center;
+  background-color: rgb(221, 181, 107);
+  margin-bottom: 30px;
+}
+.top-area > h1 {
+  font-size: 40px;
+}
+
+.top-area > p {
+  font-size: 20px;
+}
+
+.bt-area {
+  padding: 40px 30px;
+}
+
+.bt-area li {
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 14px;
+  border-bottom: 1px solid #333;
+}
+.bt-area ul {
+  margin-bottom: 20px;
+}
+.bt-area a {
+  display: block;
+  text-align: center;
+  line-height: 60px;
+  margin: 0 auto;
+
+  width: 180px;
+  height: 60px;
+  background: #666;
+  color: #fff;
+}
+
+.bt-area strong {
+  color: red;
+  font-weight: normal;
+  margin-left: 10px;
+}

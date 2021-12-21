@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  width: 1000px;
+  margin: 0 auto;
+  border: 1px solid gray;
+}
+
+.box-title {
+  border-bottom: 1px solid gray;
+  padding: 20px 100px;
+  margin-bottom: 40px;
+}
+.box-title > h1 {
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.box-title > p {
+  line-height: 1.5;
+}
+
+.box-main {
+  margin-top: 30px;
+}
+
+.span-oblique {
+  color: red;
+  font-style: oblique;
+}
+
+.box-main h2 {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.box-main p {
+  padding: 0 100px;
+  text-align: left;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.box-main img {
+  display: block;
+  margin: 0 auto;
+}
+
+.img-des {
+  margin-top: 20px;
+  display: block;
+  color: gray;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 12px;
+}
+
+h3 {
+  color: red;
+  padding: 0 100px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.medical-beauty-des {
+  line-height: 1.8;
+  text-align: left;
+}
