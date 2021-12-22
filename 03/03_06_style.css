@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.ul-1 {
+  list-style: none;
+  width: 500px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.ul-1 li {
+  height: 50px;
+  width: 100px;
+  background-color: #939;
+  float: left;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+}
+/* ---------------------------------------------------- */
+.ul-2 {
+  list-style: none;
+  width: 800px;
+  margin: 50px auto 0;
+  overflow: hidden;
+}
+
+.ul-2 li {
+  float: left;
+  border-top: 1px solid black;
+  line-height: 50px;
+  border-bottom: 1px solid black;
+}
+
+.ul-2 li a {
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  height: 50px;
+  width: 80px;
+  text-decoration: none;
+  color: black;
+  padding: 20px 10px;
+}

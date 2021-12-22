@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./03_01_style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table class="bbs1">
+      <caption>
+        표 제목
+      </caption>
+      <tbody>
+        <tr>
+          <td>칸</td>
+          <td>칸</td>
+        </tr>
+        <tr>
+          <td>칸</td>
+          <td>칸</td>
+        </tr>
+        <tr>
+          <td>칸</td>
+          <td>칸</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="bbs2">
+      <caption>
+        시간표
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">월</th>
+          <th scope="col">화</th>
+          <th scope="col">수</th>
+          <th scope="col">목</th>
+          <th scope="col">금</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="2"></td>
+          <td></td>
+          <td rowspan="2"></td>
+          <td rowspan="4"></td>
+        </tr>
+        <tr>
+          <td colspan="3"></td>
+        </tr>
+        <tr>
+          <td colspan="4"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="bbs3">
+      <caption>
+        테이크아웃커피 비교대상 제품
+      </caption>
+
+      <colgroup>
+        <col style="background-color: red" span="2" />
+        <col />
+        <col style="background-color: aqua" />
+        <col />
+        <col />
+      </colgroup>
+
+      <thead>
+        <tr>
+          <th scope="col" colspan="2">분류</th>
+          <th scope="col">브랜드명</th>
+          <th scope="col">기본 사이즈</th>
+          <th scope="col">제품명</th>
+          <th scope="col">가격(원)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" rowspan="2">해외 커피 브랜드</th>
+          <th scope="row">미국</th>
+          <td>스타벅스커피</td>
+          <td>Tall</td>
+          <td>카페아메리카노</td>
+          <td>3,900</td>
+        </tr>
+        <tr>
+          <th scope="row">이탈리아</th>
+          <td>커피빈</td>
+          <td>Small</td>
+          <td>아메리카노</td>
+          <td>4,300</td>
+        </tr>
+        <tr>
+          <th scope="row" colspan="2" rowspan="4">국내 커피 브랜드</th>
+          <td>엔제리너스 커피</td>
+          <td>Small</td>
+          <td>아메리카노</td>
+          <td>2,500</td>
+        </tr>
+        <tr>
+          <td>이디야 커피</td>
+          <td>One Size</td>
+          <td>아메리카노</td>
+          <td>2,500</td>
+        </tr>
+        <tr>
+          <td>카페베네</td>
+          <td>Regular</td>
+          <td>아메리카노</td>
+          <td>3,800~4,500</td>
+        </tr>
+        <tr>
+          <td>탐앤탐스 커피</td>
+          <td>Tall</td>
+          <td>아메리카노</td>
+          <td>3,600</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

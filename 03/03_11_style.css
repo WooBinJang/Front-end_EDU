@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  line-height: 1;
+  font-size: 14px;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+.wrap {
+  width: 332px;
+  margin: auto;
+  border: 1px solid #e0e0e0;
+}
+
+.bt-area {
+  padding: 15px;
+}
+
+.bt-area ul {
+  overflow: hidden;
+}
+
+.bt-area ul > li {
+  float: left;
+  text-align: center;
+  word-break: keep-all;
+}
+
+.txt-area {
+  padding: 5px 0 10px 0;
+}
+.bt-area ul > li > a {
+  width: 94px;
+  height: 177px;
+  display: block;
+}
+.bt-area ul > li:nth-child(3n + 2) {
+  margin: 0 10px;
+}
+
+.bt-area ul > li > a:nth-child(7 + n) {
+  width: 94px;
+  height: 157px;
+  display: block;
+}

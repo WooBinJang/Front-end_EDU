@@ -1,0 +1,23 @@
+.bbs1 {
+  border: 1px solid black;
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+td,
+th {
+  border: 1px solid black;
+}
+
+.bbs2 {
+  border: 1px solid black;
+  width: 700px;
+  height: 600px;
+}
+
+.bbs3 {
+  margin: 50px 0;
+  border: 1px solid black;
+  width: 700px;
+  border-collapse: collapse;
+}

@@ -6,11 +6,11 @@
 .box {
   width: 1000px;
   margin: 0 auto;
-  border: 1px solid gray;
+  border: 1px solid#F4F4F4;
 }
 
 .box-title {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #f4f4f4;
   padding: 20px 100px;
   margin-bottom: 40px;
 }
@@ -29,7 +29,7 @@
 }
 
 .span-oblique {
-  color: red;
+  color: #b8040f;
   font-style: oblique;
 }
 
@@ -61,7 +61,7 @@
 }
 
 h3 {
-  color: red;
+  color: #ea6e76;
   padding: 0 100px;
   text-align: left;
   margin-bottom: 30px;

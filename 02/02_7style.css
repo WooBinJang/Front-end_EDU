@@ -3,8 +3,9 @@
   margin: 0;
 }
 .box {
-  width: 700px;
+  width: 650px;
   margin: 0 auto;
+
   padding-bottom: 10px;
   border: 2px solid black;
 }
@@ -13,16 +14,16 @@ ul {
   list-style: none;
 }
 .title-box {
-  background-color: rgb(196, 188, 188);
+  background-color: #eaeaea;
 }
 
 .title-box > h1 {
-  padding: 20px;
+  padding: 10px 20px;
   text-align: left;
 }
 
 .title-box > p {
-  padding: 20px;
+  padding: 10px 20px;
   text-align: left;
   margin-bottom: 20px;
 }
@@ -42,18 +43,19 @@ ul {
 }
 
 .main-box ul {
-  max-width: 474px;
+  width: 80%;
   margin: 0 auto;
   margin-bottom: 30px;
 }
 
 .main-box img {
+  width: 80%;
   display: block;
   margin: 0 auto;
 }
 
 .main-box p {
-  max-width: 474px;
+  width: 80%;
   margin: 0 auto;
   text-align: left;
   font-size: 16px;
@@ -68,4 +70,5 @@ a {
   display: block;
   text-align: right;
   margin-bottom: 40px;
+  text-decoration: none;
 }

@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  line-height: 1;
+  font-size: 14px;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+.wrap {
+  width: 602px;
+  margin: auto;
+  border: 1px solid #e0e0e0;
+}
+
+.top-area {
+  overflow: hidden;
+  padding-top: 40px;
+  padding: 45px 15px 0;
+}
+
+.top-area h1 {
+  float: left;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.top-area > a {
+  float: right;
+}
+
+.bt-area {
+  padding: 15px 15px 0;
+}
+
+.bt-area ul {
+  overflow: hidden;
+}
+
+.bt-area ul > li {
+  float: left;
+  text-align: center;
+  word-break: keep-all;
+  font-weight: bold;
+}
+
+.bt-area ul > li > a {
+  width: 184px;
+  height: 198px;
+  display: block;
+}
+.bt-area ul > li:nth-child(3n + 2) {
+  margin: 0 10px;
+}
