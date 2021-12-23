@@ -1,0 +1,10 @@
+h1 {
+  position: relative;
+  left: 100px;
+}
+
+p {
+  position: fixed;
+  left: 50%;
+  bottom: 50%;
+}

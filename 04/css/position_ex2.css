@@ -1,0 +1,39 @@
+#wrapper {
+  width: 800px;
+  height: 500px;
+  margin: auto;
+  border: 5px solid #930;
+  padding-top: 100px;
+  position: relative;
+}
+
+.inner {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  margin: auto;
+  background-color: gray;
+}
+
+.inner > div {
+  width: 80px;
+  height: 80px;
+}
+#box1 {
+  background-color: red;
+  position: absolute;
+  left: 100px;
+  top: 150px;
+}
+#box2 {
+  background-color: green;
+}
+#box3 {
+  background-color: blue;
+}
+
+span {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}

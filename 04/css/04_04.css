@@ -1,0 +1,129 @@
+.wrapper {
+  width: 100%;
+}
+
+.inner {
+  width: 1000px;
+  margin: auto;
+}
+
+.header .logo {
+  float: left;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.header .logo span {
+  font-size: 20px;
+  font-weight: normal;
+  color: #999;
+}
+
+.header .sns {
+  float: right;
+  margin: 20px 0;
+}
+.header .sns li {
+  float: left;
+}
+.header .sns li > a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  font-size: 0;
+  text-indent: -9999px;
+  line-height: 32px;
+}
+
+.header .sns li:nth-child(1) > a {
+  background: url("../img/nell/social01.png") no-repeat;
+}
+.header .sns li:nth-child(2) > a {
+  background: url("../img/nell/social02.png") no-repeat;
+}
+.header .sns li:nth-child(3) > a {
+  background: url("../img/nell/social03.png") no-repeat;
+}
+.header .sns li:nth-child(4) > a {
+  background: url("../img/nell/social04.png") no-repeat;
+}
+.header .gnb {
+  clear: both;
+  border-top: 2px solid #999;
+}
+
+.header .gnb li {
+  float: left;
+  padding: 20px;
+}
+.header .gnb li a {
+  display: block;
+  height: 50px;
+  color: #404040;
+  font-size: 17px;
+  line-height: 50px;
+}
+.header .gnb li a:hover {
+  color: #f93;
+  text-decoration: underline;
+}
+
+.main-banner {
+  height: 550px;
+  background: url(../img/nell/main.jpeg) no-repeat center / cover;
+  text-indent: -9999px;
+  font-size: 0;
+}
+
+.subtitle {
+  border-bottom: 2px solid #666;
+  padding: 30px 0;
+}
+
+.subtitle h2 {
+  font-size: 18px;
+  color: #404040;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.subtitle p {
+  font-size: 14px;
+  color: #666;
+  line-height: 21px;
+}
+.gallery {
+  padding: 30px 0;
+}
+.gallery .imgbox {
+  width: 235px;
+  margin-right: 20px;
+  float: left;
+}
+
+.gallery .imgbox:last-child {
+  margin-right: 0;
+}
+
+.footer {
+  border: 2px solid #666;
+  padding: 30px 0;
+}
+.footer h2 {
+  float: left;
+  font-size: 24px;
+  color: #999;
+  font-weight: bold;
+}
+.footer h2 span {
+  font-size: 14px;
+  font-weight: normal;
+}
+.footer address {
+  float: right;
+  color: #999;
+  font-size: 12px;
+  font-style: normal;
+}

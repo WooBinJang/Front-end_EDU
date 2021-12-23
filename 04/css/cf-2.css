@@ -1,0 +1,25 @@
+li {
+  list-style: none;
+}
+.list1 {
+  width: 500px;
+  background: red;
+}
+.list1 > li {
+  float: left;
+  margin: 10px;
+}
+.list1 > li > a {
+  width: 100px;
+  height: 50px;
+  background: #bbb;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+}
+
+ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
