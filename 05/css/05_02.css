@@ -1,0 +1,79 @@
+.kakao-tv {
+  border-top: 1px solid #777;
+  width: 800px;
+  margin: auto;
+}
+
+.tab-title h3 {
+  float: left;
+}
+
+.tab-title h3 > a {
+  display: block;
+  background: url("../img/kakaotv/titlebg.png") no-repeat -380px -80px;
+  text-indent: -99999px;
+  font-size: 0;
+  width: 90px;
+  height: 36px;
+}
+.tab-title ul {
+  float: left;
+}
+
+.tab-title ul > li {
+  float: left;
+  margin-right: 4px;
+}
+
+.tab-title ul li a {
+  display: block;
+  font-size: 16px;
+  color: #777;
+  height: 36px;
+  padding: 0 10px;
+  line-height: 36px;
+}
+
+.tab-content {
+  position: relative;
+}
+
+.tab-content ul {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.tab-content ul:first-child {
+  display: block;
+}
+
+.tab-content ul li {
+  float: left;
+  width: 180px;
+  margin: 0 4px;
+}
+.tab-content ul li img {
+  width: 100%;
+}
+.tab-content ul li .img-box {
+  width: 180px;
+  height: 110px;
+  overflow: hidden;
+}
+.tab-content ul li .txt-box {
+  padding: 6px;
+  word-break: keep-all;
+  line-height: 1.5;
+}
+
+.tab-content ul li a:hover .txt-box {
+  text-decoration: underline;
+  color: #069;
+}
+
+.tab-content ul li a:hover img {
+  transform: scale(1.075);
+  transition: transform 0.8s;
+}

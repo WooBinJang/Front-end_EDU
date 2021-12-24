@@ -1,0 +1,92 @@
+.nav {
+  border-bottom: 2px solid black;
+}
+
+.khwrap {
+  width: 1320px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+.member {
+  margin-top: 20px;
+  float: right;
+}
+
+.nav {
+  margin: 0 auto 20px;
+  padding: 0 100px;
+}
+.logo {
+  float: left;
+  font-size: 0;
+  margin-right: 300px;
+}
+
+.member li {
+  line-height: 50px;
+  float: left;
+  display: block;
+  padding: 20px;
+}
+.gnb {
+  margin: auto;
+}
+
+.gnb .depth1 {
+  width: 150px;
+  float: left;
+  position: relative;
+}
+
+.gnb .depth1 > a {
+  display: block;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.gnb .depth1 > a:hover {
+  color: #d68;
+}
+
+.gnb .depth1:hover > a {
+  color: #d68;
+}
+
+.gnb .depth2 {
+  position: absolute;
+  left: 0px;
+  top: 60px;
+  width: 100%;
+  border-top: 2px solid #059;
+  background-color: #fff;
+  display: none;
+}
+
+.gnb .depth1:hover > .depth2 {
+  display: block;
+}
+
+.gnb .depth2 a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  font-size: 17px;
+  color: #606060;
+  text-align: center;
+}
+
+.gnb .depth2 a:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.mainbanner {
+  height: 550px;
+}
+
+.mainbanner h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}

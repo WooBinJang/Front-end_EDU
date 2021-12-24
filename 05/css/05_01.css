@@ -1,0 +1,39 @@
+.tab-box {
+  /*background-color: #ccc;*/
+  width: 250px;
+  margin: auto;
+  height: 264px;
+}
+
+.tab {
+  position: relative;
+  padding-top: 15px;
+}
+
+.tab-box img {
+  width: 250px;
+}
+
+.tab dt {
+  float: left;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #606060;
+  border: 1px solid #d0d0d0;
+  background-color: #fff;
+  margin: 0 2px;
+}
+
+.tab dt.on {
+  background-color: #606060;
+  color: #fff;
+}
+
+.tab dd {
+  position: absolute;
+  left: 0;
+  top: 50px;
+}
