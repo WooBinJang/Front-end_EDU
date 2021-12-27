@@ -1,0 +1,245 @@
+.footer {
+  width: 100%;
+}
+
+.inner {
+  width: 1200px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.nav {
+  width: 1200px;
+  border-bottom: 2px solid #ececec;
+}
+.nav > ul > li > a {
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  padding: 15px 25px 17px 25px;
+  text-align: center;
+  color: #5e636d;
+  position: relative;
+}
+
+.nav > ul > li > a::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 1px;
+  height: 12px;
+  background-color: rgb(215, 218, 223);
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+
+.nav > button {
+  width: 115px;
+  height: 32px;
+  border: 1px solid #ececec;
+  position: absolute;
+  right: 0px;
+  top: 15px;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #5e636d;
+  letter-spacing: -1px;
+  background-color: #ffffff;
+  position: relative;
+}
+.nav > button::after {
+  background: url("../img/sprite__common.png") no-repeat -687px -240px;
+  content: "";
+  width: 19px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.info {
+  float: left;
+  padding: 13px 0 19px 0;
+  border-bottom: 2px solid #ececec;
+}
+.info-left {
+  width: 620px;
+}
+
+.info-left > span > button {
+  width: 110px;
+  height: 23px;
+  border: 1px solid #ececec;
+  font-size: 14px;
+  color: #5e636d;
+  letter-spacing: -1px;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: -0.5px;
+  background-color: #ffffff;
+  margin: -2px 8px 0 3px;
+  position: relative;
+  padding-right: 12px;
+}
+.info-left > span > button::after {
+  background: url("../img/sprite__common.png") no-repeat -732px -230px;
+  content: "";
+  width: 10px;
+  height: 19px;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+}
+
+.info-left > strong {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  color: #5e636d;
+}
+.info-left > span {
+  display: block;
+  margin-top: 5px;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: -0.5px;
+  color: #757c8a;
+}
+.info > * {
+  float: left;
+}
+.info-right {
+  width: 580px;
+}
+
+.info-right > strong {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  color: #5e636d;
+  position: relative;
+}
+.info-right > strong::after {
+  background: url("../img/sprite__common.png") no-repeat -732px -230px;
+  content: "";
+  width: 10px;
+  height: 19px;
+  position: absolute;
+  top: 50%;
+  left: 60px;
+  transform: translateY(-50%);
+}
+.info-right > span {
+  display: block;
+  margin-top: 5px;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: -0.5px;
+  color: #757c8a;
+}
+
+.info-right > span > span {
+  color: rgb(0, 132, 228);
+}
+
+.legal-info {
+  padding: 9px 0 18px 0;
+  border-bottom: 2px solid #ececec;
+}
+
+.legal-info > ul {
+  height: 54px;
+  width: 750px;
+}
+.legal-info > ul > li {
+  float: left;
+}
+
+.legal-info > ul > li {
+  font-size: 13px;
+  line-height: 20px;
+  color: #94989f;
+  letter-spacing: -0.5px;
+  margin-right: 30px;
+  padding-top: 7px;
+}
+
+.notice {
+  padding: 16px 0 85px 0;
+  border-top: 1px solid #ececec;
+}
+
+.notice > .text-notice1 {
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: -1px;
+  color: #94989f;
+}
+.notice > .text-notice1 > a {
+  text-decoration: underline;
+  margin-left: 8px;
+  margin-top: -1px;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: -1px;
+  color: #94989f;
+}
+.notice > .text-notice2 {
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: -1px;
+  font-weight: normal;
+  color: #5e636d;
+}
+.notice > address {
+  font-size: 12px;
+  line-height: 20px;
+  color: #94989f;
+}
+
+.online-society {
+  margin-top: 20px;
+}
+.online-society > a {
+  display: inline-block;
+  background: url("../img/sprite__common.png") no-repeat -584px -457px;
+  width: 80px;
+  height: 22px;
+  line-height: 22px;
+}
+.online-society > button {
+  margin-left: 8px;
+  margin-top: -1px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -1px;
+  color: #94989f;
+  border: 0;
+  background-color: #fff;
+  text-decoration: underline;
+  position: relative;
+}
+
+.online-society > button::after {
+  background: url("../img/sprite__common.png") no-repeat -758px -230px;
+  content: "";
+  width: 19px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  transform: translateY(-75%);
+}
+
+.online-society > span {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -1px;
+}

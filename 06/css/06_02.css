@@ -1,0 +1,75 @@
+.gnb {
+  height: 100px;
+  border-bottom: 1px solid #ccc;
+}
+
+.gnb > .dep1 {
+  float: left;
+  padding-left: 30px;
+  position: relative;
+}
+
+.gnb > .dep1 > a {
+  display: block;
+  height: 100px;
+  font-size: 18px;
+  padding: 0 25px;
+  line-height: 100px;
+  text-align: center;
+}
+
+.gnb > .dep1:hover > a {
+  color: #f44336;
+  position: relative;
+}
+.gnb > .dep1:hover > a::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #f44336;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.dep2 {
+  position: absolute;
+  left: 50px;
+  top: 100px;
+  width: 800px;
+  display: none;
+}
+.dep1:hover > .dep2 {
+  display: block;
+}
+.dep2 > li {
+  float: left;
+  margin-right: 30px;
+}
+.dep2 > li > a {
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  padding-right: 30px;
+  position: relative;
+}
+
+.dep2 > li > a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 12px;
+  background-color: #777;
+}
+.dep2 > li:last-child > a::after {
+  display: none;
+}
+.dep2 > li > a:hover {
+  color: #f44336;
+}

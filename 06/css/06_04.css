@@ -1,0 +1,53 @@
+.footer {
+  background-color: #303030;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.inner {
+  width: 1200px;
+  margin: auto;
+  color: #999;
+}
+
+.policy > li {
+  float: left;
+  font-size: 13px;
+  padding: 0 12px;
+  position: relative;
+}
+
+.policy > li > a {
+  display: block;
+}
+.policy > li > a::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 9px;
+  background-color: #999;
+  right: 0;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+.policy > li > a > strong {
+  color: #fff;
+}
+.site-info {
+  margin-top: 30px;
+  font-size: 12px;
+}
+.site-info span {
+  margin-right: 12px;
+}
+
+.site-info address {
+  display: inline;
+  font-style: normal;
+}
+
+.site-info * {
+  float: left;
+}

@@ -1,0 +1,83 @@
+.gnb {
+  height: 110px;
+  width: 1000px;
+  margin: auto;
+  position: relative;
+}
+
+.depth1 {
+  float: left;
+  width: 200px;
+}
+
+.depth1 > a {
+  display: block;
+  height: 110px;
+  line-height: 110px;
+  font-size: 22px;
+  color: #333;
+  text-align: center;
+  position: relative;
+}
+.depth1 > a::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background-color: #900;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.depth1:hover > a::after {
+  width: 40px;
+  transition: width 0.3s;
+}
+.depth1:hover > a {
+  color: #900;
+}
+.subbox {
+  position: absolute;
+  left: 0;
+  top: 110px;
+  height: 80px;
+  line-height: 80px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  background-color: #fff;
+  display: none;
+}
+.subbox > a {
+  float: left;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-right: 100px;
+  color: #900;
+  position: relative;
+}
+
+.subbox > a::after {
+  content: "";
+  display: block;
+  background: url(../img/subArr.png) no-repeat;
+  width: 14px;
+  height: 15px;
+  position: absolute;
+  right: -45px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.subbox > .depth2 {
+  float: left;
+}
+.depth2 > li {
+  float: left;
+  margin-right: 80px;
+}
+.depth1:hover > .subbox {
+  display: block;
+}

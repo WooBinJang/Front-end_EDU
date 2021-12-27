@@ -1,0 +1,53 @@
+.gnb {
+  width: 1400px;
+  margin: 30px auto;
+  height: 50px;
+  position: relative;
+}
+
+.depth1 {
+  float: left;
+  width: 200px;
+  text-align: center;
+}
+
+.depth1 > a {
+  display: block;
+  height: 50px;
+  background-color: #202020;
+  color: #fff;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.depth1:hover > a {
+  background-color: #f00;
+}
+
+.depth2 {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width: 100%;
+  background-color: #d0d0d0;
+  display: none;
+}
+
+.depth2 > li {
+  float: left;
+}
+.depth2 > li > a {
+  display: block;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 17px;
+}
+.depth2 > li > a:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+.depth1:hover > .depth2 {
+  display: block;
+}

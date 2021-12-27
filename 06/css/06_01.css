@@ -1,0 +1,88 @@
+.gnb {
+  width: 1000px;
+  height: 100px;
+  margin: auto;
+  position: relative;
+}
+
+.depth1 {
+  float: left;
+  width: 250px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.depth1 > a {
+  display: block;
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  position: relative;
+  font-size: 18px;
+  color: #fff;
+}
+
+.depth1 > a::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 0;
+  height: 10px;
+  background-color: #f43336;
+  border-radius: 50%;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.depth1:hover > a::after {
+  width: 10px;
+  transition: width 0.3s;
+}
+
+.depth1:hover > a {
+  color: #f43336;
+  background-color: white;
+}
+
+.depth2 {
+  position: absolute;
+  left: 0;
+  top: 100px;
+  width: 100%;
+
+  display: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.depth2 > li {
+  float: left;
+  position: relative;
+}
+
+.depth2 > li::after {
+  content: "|";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+
+.depth2 > li:last-child::after {
+  display: none;
+}
+.depth2 > li > a {
+  display: block;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 17px;
+}
+.depth2 > li > a:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+.depth1:hover > .depth2 {
+  display: block;
+}
