@@ -1,0 +1,36 @@
+vender prefix
+
+새로운 css 속성이나 값이 완벽하게 제장된 상태가 아닐때 
+밴더프리픽스 를 설정해서 작성하면 해당 기능이 포함되지 않은 브라우저들도 그 기능을 사용 할 수 있다. 
+
+-webkit- : 구글, 사파리 브라우저
+-moz- : 파이어폭스 브라우저
+-o- : 오페라 브라우저
+-ms- : 익스플로러
+표준문법 
+
+
+@font-face{
+	font-familye:글꼴명;
+	src:url(경로) format(); 	
+}
+
+ttf 트루타입
+otf 오픈타임 
+woff 웹오픈폰트  
+woff2 웹오픈폰트2 
+svg 
+eot 
+
+inline frame  문서안에 다른 문서를 삽입 할때 사용 
+
+<iframe></iframe>
+src="불러올 문서의 경로" 
+width="" x
+height="" x
+frameborder="" x
+title=""
+
+
+
+

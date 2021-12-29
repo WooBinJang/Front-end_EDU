@@ -1,0 +1,173 @@
+/*서브타입 1 공통 Class*/
+
+.sub-title-box {
+  height: 122px;
+}
+
+.sub-title-ty1 {
+  font-size: 30px;
+  color: #fff;
+  float: left;
+  margin-top: 95px;
+}
+
+.location {
+  float: right;
+  margin-top: 105px;
+}
+
+.location > li {
+  float: left;
+  color: #fff;
+  font-size: 13px;
+  margin-left: 24px;
+  position: relative;
+}
+
+.location > li + li::before {
+  content: ">";
+  display: block;
+  width: 6px;
+  height: 12px;
+  position: absolute;
+  line-height: 12px;
+  text-align: center;
+  font-size: 10px;
+  position: absolute;
+  left: -16px;
+}
+
+.sub-title-box-ty1 {
+  padding-top: 50px;
+}
+.sub-title-box-ty1 .inner-box {
+  border-bottom: 1px solid #666;
+}
+.sub-title-box-ty1 h3 {
+  padding-bottom: 13px;
+  width: 130px;
+  color: #ffb414;
+  font-size: 22px;
+  font-weight: 500;
+  position: relative;
+}
+.sub-title-box-ty1 h3::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #ffb414;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+}
+
+/*공통 게시판 타입정리*/
+.table-ty1 {
+  background: #fff;
+  border-collapse: collapse;
+}
+
+.table-ty1 caption {
+  display: none;
+}
+.table-ty1 th {
+  text-align: center;
+  font-size: 15px;
+  color: #303030;
+  height: 45px;
+  border-bottom: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+}
+
+.table-ty1 th:last-child {
+  border-right: none;
+}
+.table-ty1 td {
+  text-align: center;
+  font-size: 16px;
+  color: #404040;
+  height: 50px;
+  border-bottom: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+}
+.table-ty1 td:nth-child(2) {
+  padding-left: 10px;
+  text-align: left;
+}
+
+.table-ty1 td:nth-child(2) {
+  padding-left: 60px;
+  text-align: left;
+}
+.table-ty1 td:last-child {
+  border-right: none;
+}
+/*서브타입 1 공통 Class*/
+
+/* 편성표 서브 페이지*/
+#timetable {
+  background-color: #e0e0e0;
+  padding-bottom: 165px;
+}
+#timetable .sub-title-box {
+  background: url(../img/remote-control-932273-1920.png) no-repeat center /
+    cover;
+}
+
+.timetable-day-box {
+  padding-top: 94px;
+  padding-bottom: 28px;
+}
+.timetable-day-select {
+  width: 250px;
+  height: 42px;
+  margin: auto;
+  line-height: 42px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #353535;
+  position: relative;
+}
+.timetable-day-select a {
+  display: block;
+  width: 39px;
+  height: 39px;
+  position: absolute;
+  top: 1.5px;
+  text-indent: -9999px;
+}
+.timetable-day-select a.prev {
+  left: 0;
+  background: url(../img/arrow-prev.png) no-repeat;
+}
+.timetable-day-select a.next {
+  right: 0;
+  background: url(../img/arrow-next.png) no-repeat;
+}
+/**/
+.day-list-box .day-list li {
+  float: left;
+}
+
+.day-list-box .day-list li a {
+  display: block;
+  height: 70px;
+  text-align: center;
+  font-size: 16px;
+  color: #ededed;
+  padding-top: 18px;
+  box-sizing: border-box;
+}
+
+.day-list-box .day-list li:nth-child(2n + 1) {
+  width: 172.5px;
+  background-color: #353535;
+}
+.day-list-box .day-list li:nth-child(2n) {
+  width: 170px;
+  background-color: #404040;
+}
+
+/**/
