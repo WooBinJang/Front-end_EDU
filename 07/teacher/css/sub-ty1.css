@@ -103,6 +103,7 @@
 .table-ty1 td:last-child {
   border-right: none;
 }
+
 /*서브타입 1 공통 Class*/
 
 /* 편성표 서브 페이지*/
@@ -146,7 +147,7 @@
   right: 0;
   background: url(../img/arrow-next.png) no-repeat;
 }
-/**/
+
 .day-list-box .day-list li {
   float: left;
 }
@@ -162,12 +163,152 @@
 }
 
 .day-list-box .day-list li:nth-child(2n + 1) {
-  width: 172.5px;
+  width: 171.4285714285714px;
   background-color: #353535;
 }
 .day-list-box .day-list li:nth-child(2n) {
-  width: 170px;
+  width: 171.4285714285714px;
   background-color: #404040;
 }
 
+/* 프로그램 파일 */
+#program .sub-title-box {
+  background: url(../img/program-visual.png) no-repeat center / cover;
+}
+
+.program-list-title-box {
+  background-color: #e0e0e0;
+  padding-top: 69px;
+  padding-bottom: 70px;
+}
+
+.program-list-title-box ul {
+  border-bottom: 1px solid #666;
+  padding-bottom: 17px;
+}
+
+.program-list-title-box ul > li {
+  float: left;
+  color: #666;
+  font-size: 22px;
+  font-weight: 500;
+  margin-right: 86px;
+}
+
+.program-list-title-box ul > li.on {
+  color: #ffb414;
+  position: relative;
+}
+
+.program-list-title-box ul > li.on::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #ffb414;
+  left: 0;
+  bottom: -18px;
+}
+
+.program-list-box {
+  padding: 42px 0;
+}
+.program-list > li {
+  float: left;
+  margin-right: 20px;
+  width: 285px;
+}
+.program-list > li:last-child {
+  margin-right: 0;
+}
+.program-list > li p {
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 12px;
+  text-align: center;
+  color: #505050;
+}
+
 /**/
+.program-info-box {
+  background-color: #e0e0e0;
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 137px;
+}
+
+.program-info-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 0px;
+  height: 0px;
+  border: 26px solid #fff;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.pg-info-img {
+  float: left;
+  width: 285px;
+  margin-right: 20px;
+}
+.pg-info-content {
+  float: left;
+  width: 895px;
+}
+
+.pg-story {
+  width: 884px;
+}
+.pg-info-content h3 {
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.17;
+  color: #333;
+}
+
+.pg-info-content .pg-story {
+  margin-top: 23px;
+}
+
+.pg-info-content .pg-story > p {
+  margin-bottom: 21px;
+  font-size: 14px;
+  color: #333;
+  word-break: keep-all;
+}
+
+.pg-info-content .pg-story > p:last-of-type {
+  margin-bottom: 34px;
+}
+
+.pg-casting > ul > li {
+  float: left;
+  margin-right: 15px;
+}
+
+.pg-casting > ul > li:last-child {
+  margin-right: 0;
+}
+
+.pg-casting .casting-name1 {
+  margin-top: 17px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  color: #333;
+}
+
+.pg-casting .casting-name2 {
+  margin-top: 7px;
+  font-size: 12px;
+  text-align: center;
+  color: #666;
+}
