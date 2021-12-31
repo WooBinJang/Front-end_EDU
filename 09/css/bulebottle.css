@@ -1,0 +1,187 @@
+* {
+  -webkit-text-size-adjust: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+a {
+  display: block;
+}
+
+body {
+  overflow-x: hidden;
+}
+header {
+  height: 70px;
+  background-color: #242424;
+  position: relative;
+}
+
+header h1 {
+  width: 150px;
+  height: 70px;
+  margin: auto;
+  text-indent: -9999px;
+  background: url(../img/icon/text-logo.png) no-repeat center;
+  background-size: 111px auto;
+}
+
+header h1 a {
+  height: 100%;
+}
+
+header .home-btn {
+  text-indent: -9999px;
+  width: 36px;
+  height: 34px;
+  background: url(../img//icon/toplogo.png) no-repeat center / 12px auto;
+  position: absolute;
+  left: 20px;
+  top: 18px;
+}
+
+header .menu-btn {
+  text-indent: -9999px;
+  width: 46px;
+  height: 46px;
+  background: url(../img//icon/menu-btn.png) no-repeat center / 29px auto;
+  position: absolute;
+  right: 16px;
+  top: 12px;
+}
+.slider-list li {
+  position: relative;
+}
+.slider-list li img {
+  width: 100%;
+}
+
+.slider-list li a {
+  position: absolute;
+  width: 38.055vw;
+  height: 9.722vw;
+  background-color: #fff;
+  font-size: 3.888vw;
+  text-align: center;
+  line-height: 9.722vw;
+  left: 50%;
+  bottom: 17.777vw;
+  transform: translateX(-50%);
+}
+
+.subscribe-area {
+  padding: 44px 0;
+}
+
+.subscribe-area .subscribe-title {
+  font-size: 4.44vw;
+  color: #36373b;
+  text-align: center;
+  margin-bottom: 3.88vw;
+  line-height: 1.79;
+}
+
+.subscribe-list li {
+  text-align: center;
+  margin-bottom: 3.3vw;
+}
+
+.subscribe-list li img {
+  width: 74.16vw;
+  height: auto;
+}
+
+.subscribe-area .subscribe-btn {
+  width: 65vw;
+  height: 16.66vw;
+  line-height: 16.66vw;
+  text-align: center;
+  font-size: 4.16vw;
+  margin: 5.55vw auto 0;
+  background-color: #36373b;
+  color: #fff;
+}
+
+/* 메뉴영역*/
+.menu-area {
+  background: url(../img/menu-bg.png) no-repeat top center / cover;
+  padding: 16.11vw 4.4vw 14.72vw;
+  position: relative;
+}
+
+.menu-area .menu-title {
+  font-size: 10.833vw;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  color: #f1f1f1;
+  margin-bottom: 6.9444vw;
+}
+.menu-area .menu-title::before {
+  content: "";
+  width: 10.833vw;
+  height: 1.666vw;
+  background-color: #1da4d9;
+  position: absolute;
+  top: 11.388vw;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.menu-area .menu-title-sub {
+  font-size: 3.75vw;
+  line-height: 1.19;
+  text-align: center;
+  color: #1da4d9;
+  margin-bottom: 8.888vw;
+}
+.menu-area .menu-list > li {
+  float: left;
+  width: calc(50% - 5px);
+}
+.menu-area .menu-list > li:nth-child(2n) {
+  margin-left: 5px;
+}
+.menu-area .menu-list > li:nth-child(2n + 1) {
+  margin-right: 5px;
+}
+
+.menu-area .menu-list > li img {
+  margin-bottom: 3.888vw;
+  width: 100%;
+}
+.menu-area .menu-list > li span {
+  display: block;
+}
+
+.menu-area .menu-list .menu-thum-txt > strong {
+  display: block;
+  font-size: 3.472vw;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  color: #fff;
+  margin-bottom: 2.5vw;
+}
+.menu-area .menu-list .menu-thum-txt {
+  display: block;
+  font-size: 2.916vw;
+  line-height: 1.19;
+  text-align: center;
+  color: #a1a1a1;
+  margin-bottom: 3.888vw;
+}
+.menu-allview-btn {
+  width: 46.666vw;
+  height: 14.166vw;
+  border: solid 1px #464646;
+  background-color: #00a1df;
+  font-size: 3.888vw;
+  line-height: 14.166vw;
+  margin: 0 auto;
+  text-align: center;
+  color: #eee;
+  margin-top: 10.277vw;
+}

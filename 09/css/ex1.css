@@ -1,0 +1,26 @@
+.box1 {
+  width: 500px;
+  height: 500px;
+  border: 1px solid red;
+  font-size: 16px;
+}
+
+.box2 {
+  width: 500px;
+  height: 500px;
+  border: 1px solid blue;
+  font-size: 2em;
+}
+
+.box3 {
+  width: 500px;
+  height: 500px;
+  border: 1px solid green;
+  font-size: 2em;
+}
+
+.box4 {
+  width: 500px;
+  height: 500px;
+  border: 1px solid orange;
+}

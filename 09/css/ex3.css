@@ -1,0 +1,33 @@
+body {
+  font-size: 30px;
+}
+
+.ex1 {
+  font-size: 16px;
+}
+
+.ex2 {
+  font-size: 100%;
+}
+
+.ex3 {
+  font-size: 1em;
+}
+
+.box1 {
+  width: 18.75em;
+  height: 18.75em;
+  padding: 16px;
+  margin: 10px;
+  border: 3px solid red;
+  float: left;
+}
+
+.box2 {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  padding: 1em;
+  border: 3px solid red;
+  float: left;
+}

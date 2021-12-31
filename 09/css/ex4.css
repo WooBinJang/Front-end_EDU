@@ -1,0 +1,13 @@
+.box1 {
+  width: 310px;
+  height: 200px;
+  background-color: red;
+  margin: auto;
+}
+
+.box2 {
+  width: 85.111vw;
+  height: 27.1vh;
+  background-color: green;
+  margin: auto;
+}
