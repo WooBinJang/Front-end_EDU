@@ -1,0 +1,37 @@
+h1 {
+  font-size: 50px;
+  color: bisque;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    background-color: red;
+  }
+  .txt-box > .txt {
+    font-size: 24px;
+    color: #fff;
+  }
+}
+@media screen and (max-width: 980px) {
+  body {
+    background-color: blue;
+  }
+  .txt-box > .txt {
+    font-size: 12px;
+    color: #333;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  body {
+    background-color: green;
+  }
+  .txt-box > .txt {
+    font-size: 20px;
+    color: purple;
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    background-color: yellow;
+  }
+}

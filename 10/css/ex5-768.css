@@ -1,0 +1,29 @@
+/* 768px 이상*/
+
+nav .gnb {
+  overflow: hidden;
+}
+nav .gnb li {
+  float: left;
+  width: 100px;
+  border-bottom: none;
+  border-right: 1px solid #fff;
+}
+nav .gnb li:first-child {
+  border-left: 1px solid #fff;
+  margin-left: 70px;
+}
+.container .left-area {
+  overflow: hidden;
+}
+.container .left-area div {
+  float: left;
+  box-sizing: border-box;
+  width: calc(50% - 8px);
+}
+.container .left-area div:first-child {
+  margin-right: 8px;
+}
+.container .left-area div:last-child {
+  margin-left: 8px;
+}

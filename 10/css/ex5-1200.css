@@ -1,0 +1,25 @@
+/* 1200px 이상*/
+
+.container {
+  overflow: hidden;
+}
+.container .left-area {
+  float: left;
+  width: calc(30% - 24px);
+}
+
+.container .left-area div:first-child {
+  margin-right: 0;
+  margin-bottom: 8px;
+}
+.container .left-area div:last-child {
+  margin-left: 0;
+}
+.container .left-area div {
+  float: none;
+  width: 100%;
+}
+.container .right-area {
+  float: right;
+  width: 70%;
+}

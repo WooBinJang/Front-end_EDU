@@ -1,0 +1,26 @@
+#box1 {
+  background-color: green;
+}
+
+.box {
+  background-color: blue;
+}
+
+div {
+  width: 300px;
+  height: 300px;
+  background-color: red;
+}
+
+.txt1 {
+  font-size: 25px;
+}
+
+p {
+  color: #fff;
+  font-size: 50px;
+}
+
+#area1 > p {
+  font-size: 40px !important;
+}

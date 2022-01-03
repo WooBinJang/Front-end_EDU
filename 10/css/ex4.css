@@ -1,0 +1,11 @@
+@media screen and (orientation: landscape) {
+  body {
+    background: url(../img/bg1.jpg);
+  }
+}
+
+@media screen and (orientation: portrait) {
+  body {
+    background: url(../img/bg2.jpg);
+  }
+}

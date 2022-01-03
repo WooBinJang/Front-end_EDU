@@ -1,0 +1,252 @@
+@import url(./reset.css);
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap");
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/*header*/
+header {
+  border-top: 3px solid #f53b59;
+  width: 100%;
+  min-width: 980px;
+  margin: auto;
+}
+#headerTop {
+  height: 70px;
+}
+.top_link {
+  padding-top: 15px;
+  margin-bottom: 15px;
+}
+.top_link h1 {
+  float: left;
+  width: 110px;
+  height: 43px;
+}
+
+.top_link .mbtop_btn {
+  float: right;
+  display: none;
+  background: url(../img/btn_menu.png) no-repeat;
+  background-color: red;
+  width: 44px;
+  height: 44px;
+  text-indent: -9999999px;
+  border: transparent;
+}
+.top_link ul {
+  float: right;
+}
+.top_link ul li {
+  float: left;
+  padding-right: 3px;
+  padding-left: 3px;
+  margin-left: 10px;
+  position: relative;
+}
+.top_link ul li:first-child {
+  margin-left: 0px;
+}
+.top_link ul li:last-child {
+  margin-left: 20px;
+}
+.top_link ul li:not(:last-child):after {
+  content: "";
+  width: 1px;
+  height: 16px;
+  background-color: #555;
+  position: absolute;
+  top: 2px;
+  right: -5px;
+}
+.top_link .header_zoom > span {
+  float: left;
+  margin-right: 5px;
+}
+.top_link .header_zoom .zoom_view {
+  display: block;
+  background: url(../img/icons.png) no-repeat 0 -20px;
+  width: 16px;
+  height: 16px;
+  text-indent: -999999999px;
+}
+.top_link .header_zoom .zoom_plus {
+  display: block;
+  background: url(../img/icons.png) no-repeat -22px -19px;
+  width: 17px;
+  height: 17px;
+  text-indent: -999999999px;
+}
+.top_link .header_zoom .zoom_minus {
+  display: block;
+  background: url(../img/icons.png) no-repeat -45px -19px;
+  width: 17px;
+  height: 17px;
+  text-indent: -999999999px;
+}
+.nav {
+  height: 70px;
+}
+.nav .mainMenu ul li {
+  float: left;
+  width: 12%;
+}
+.nav .mainMenu ul li a {
+  padding: 20px 50px 20px 15px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nav .mainMenu .noticeBox {
+  float: right;
+  display: block;
+  background: url("../img/icons.png") no-repeat 0 -147px;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  right: 30px;
+}
+.nav .mainMenu .noticeBox:hover {
+  background: url("../img/icons.png") no-repeat -21px -147px;
+  width: 20px;
+  height: 20px;
+}
+.nav .mainMenu .noticeBox em {
+  position: absolute;
+  top: -21px;
+  right: -11px;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+}
+
+.contents .quickMenu {
+  margin-bottom: 40px;
+}
+.contents .quickMenu ul {
+  margin: auto;
+}
+.contents .quickMenu ul li {
+  float: left;
+  width: 15%;
+}
+.contents .quickMenu ul li:nth-child(1) span {
+  display: block;
+  background: url(../img/icon_main_quick.png) no-repeat 0 0;
+  width: 64px;
+  height: 64px;
+  text-indent: -999999px;
+  margin-bottom: 15px;
+}
+.contents .quickMenu ul li:nth-child(1):hover span {
+  background: url(../img/icon_main_quick.png) no-repeat 0 -64px;
+}
+.contents .quickMenu ul li:nth-child(2) span {
+  display: block;
+  background: url(../img/icon_main_quick.png) no-repeat -64px 0px;
+  width: 64px;
+  height: 64px;
+  text-indent: -999999px;
+  margin-bottom: 15px;
+}
+.contents .quickMenu ul li:nth-child(2):hover span {
+  background: url(../img/icon_main_quick.png) no-repeat -64px -64px;
+}
+.contents .quickMenu ul li:nth-child(3) span {
+  display: block;
+  background: url(../img/icon_main_quick.png) no-repeat -128px 0;
+  width: 64px;
+  height: 64px;
+  text-indent: -999999px;
+  margin-bottom: 15px;
+}
+.contents .quickMenu ul li:nth-child(3):hover span {
+  background: url(../img/icon_main_quick.png) no-repeat -128px -64px;
+}
+.contents .quickMenu ul li:nth-child(4) span {
+  display: block;
+  background: url(../img/icon_main_quick.png) no-repeat -192px 0;
+  width: 64px;
+  height: 64px;
+  text-indent: -999999px;
+  margin-bottom: 15px;
+}
+.contents .quickMenu ul li:nth-child(4):hover span {
+  background: url(../img/icon_main_quick.png) no-repeat -192px -64px;
+}
+.contents .quickMenu ul li:nth-child(5) span {
+  display: block;
+  background: url(../img/icon_main_quick.png) no-repeat -256px 0;
+  width: 64px;
+  height: 64px;
+  text-indent: -999999px;
+  margin-bottom: 15px;
+}
+.contents .quickMenu ul li:nth-child(5):hover span {
+  background: url(../img/icon_main_quick.png) no-repeat -256px -64px;
+}
+.contents .quickMenu ul li:nth-child(6) span {
+  display: block;
+  background: url(../img/icon_main_quick.png) no-repeat -320px 0;
+  width: 64px;
+  height: 64px;
+  text-indent: -999999px;
+  margin-bottom: 15px;
+}
+.contents .quickMenu ul li:nth-child(6):hover span {
+  background: url(../img/icon_main_quick.png) no-repeat -320px -64px;
+}
+.contents .special h4 {
+  color: rgb(51, 51, 51);
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.contents .special ul li {
+  float: left;
+  width: 203px;
+  height: 109px;
+  margin-right: 30px;
+}
+.contents .special ul li .sp_img {
+  position: relative;
+  margin-bottom: 10px;
+}
+.contents .special ul li .sp_img > img {
+  display: block;
+
+  margin: auto;
+}
+.contents .special ul li .sp_img > .img_hover {
+  display: none;
+  position: absolute;
+  background: url(../img/icon_more.png) no-repeat;
+  bottom: 0;
+  right: 0%;
+  width: 16px;
+  height: 16px;
+  text-indent: -99999999px;
+}
+.contents .special ul li:hover .sp_img > .img_hover {
+  display: block;
+}
+.contents .special ul li h5 {
+  color: rgb(51, 51, 51);
+  margin-bottom: 10px;
+}
+.contents .special ul li p {
+  color: rgb(136, 136, 136);
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 1023px) {
+}
+
+@media screen and (max-width: 767px) {
+}
