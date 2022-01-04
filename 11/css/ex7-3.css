@@ -1,0 +1,49 @@
+.wrap {
+  width: 300px;
+  height: 300px;
+  border: 5px solid #000;
+  margin: 10;
+  background-color: #ccc;
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrap > div {
+  flex: 0 0 100px;
+  height: 100px;
+}
+
+.wrap > div:nth-child(1) {
+  background-color: red;
+}
+
+.wrap > div:nth-child(2) {
+  background-color: green;
+}
+
+.wrap > div:nth-child(3) {
+  background-color: blue;
+}
+.wrap > div:nth-child(4) {
+  background-color: yellow;
+}
+.wrap > div:nth-child(5) {
+  background-color: pink;
+}
+
+.wrap1 {
+  align-content: space-around;
+}
+
+.wrap2 {
+  align-content: flex-start;
+}
+
+.wrap3 {
+  align-content: flex-end;
+}
+.wrap4 {
+  align-content: center;
+}
+.wrap5 {
+  align-content: space-between;
+}

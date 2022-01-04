@@ -1,0 +1,92 @@
+.wrap1 {
+  display: flex;
+  width: 600px;
+  height: 40px;
+  background-color: #666;
+}
+.wrap1 > div {
+  width: 0;
+  flex-grow: 1;
+}
+.wrap1 > div:nth-child(1) {
+  background-color: red;
+  flex-grow: 2;
+}
+
+.wrap1 > div:nth-child(2) {
+  background-color: green;
+}
+
+.wrap1 > div:nth-child(3) {
+  background-color: blue;
+}
+.wrap2 {
+  display: flex;
+  width: 600px;
+  height: 40px;
+  background-color: #666;
+  margin-top: 50px;
+}
+.wrap2 > div {
+  width: 300px;
+  flex-shrink: 1;
+}
+.wrap2 > div:nth-child(1) {
+  background-color: red;
+}
+
+.wrap2 > div:nth-child(2) {
+  background-color: green;
+}
+
+.wrap2 > div:nth-child(3) {
+  background-color: blue;
+}
+.wrap3 {
+  display: flex;
+  width: 600px;
+  height: 40px;
+  background-color: #666;
+  margin-top: 50px;
+}
+
+.wrap3 > div {
+  width: 300px;
+}
+.wrap3 > div:nth-child(1) {
+  background-color: red;
+  flex-shrink: 2;
+}
+
+.wrap3 > div:nth-child(2) {
+  background-color: green;
+  flex-shrink: 1;
+}
+
+.wrap3 > div:nth-child(3) {
+  background-color: blue;
+  flex-shrink: 1;
+}
+
+.wrap4 {
+  display: flex;
+  width: 600px;
+  height: 40px;
+  background-color: #666;
+  margin-top: 50px;
+}
+
+.wrap4 > div:nth-child(1) {
+  background-color: red;
+  flex-basis: 100px;
+}
+
+.wrap4 > div:nth-child(2) {
+  background-color: green;
+  flex-basis: 150px;
+}
+
+.wrap4 > div:nth-child(3) {
+  background-color: blue;
+  flex-basis: 60px;
+}

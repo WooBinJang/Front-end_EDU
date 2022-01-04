@@ -1,0 +1,61 @@
+.box1 {
+  width: 150px;
+  height: 100px;
+  background-color: red;
+  animation-name: ani1;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.box2 {
+  width: 500px;
+  height: 500px;
+  background: url(../img/paris.jpg) no-repeat;
+  background-size: cover;
+  animation-name: ani2;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+
+.box3 {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: red;
+  animation: ani3 2.5s 1s linear infinite alternate;
+  position: relative;
+}
+@keyframes ani1 {
+  0% {
+    width: 150px;
+  }
+  100% {
+    width: 700px;
+  }
+}
+
+@keyframes ani2 {
+  0% {
+    background-image: url(../img/paris.jpg);
+  }
+  50% {
+    background-image: url(../img/rocks.jpg);
+  }
+  100% {
+    background-image: url(../img/ocean.jpg);
+  }
+}
+
+@keyframes ani3 {
+  0% {
+    border-radius: 50%;
+    left: 0;
+  }
+
+  100% {
+    border-radius: 0%;
+    left: 600px;
+  }
+}
