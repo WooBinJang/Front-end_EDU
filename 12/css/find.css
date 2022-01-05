@@ -1,0 +1,41 @@
+.find .find-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+
+.find .find-header .find-item {
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  color: #523737;
+}
+
+.find .find-header .find-item span {
+  display: block;
+  margin-top: 10px;
+}
+
+.find .find-header .find-item .find-item-title {
+  font-size: 14px;
+  color: #523737;
+}
+.find .find-bottom .find-bottom-title {
+  font-size: 14px;
+  color: #b7b4af;
+  padding: 5px 15px;
+  border-bottom: 1px solid #ebebeb;
+}
+.find .find-bottom .find-bottom-info span {
+  display: block;
+  margin: auto;
+  font-size: 20px;
+  color: #b7b4af;
+  padding: 30px 15px;
+  border-bottom: 1px solid #ebebeb;
+  text-align: center;
+}

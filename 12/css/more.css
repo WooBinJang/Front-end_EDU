@@ -1,0 +1,106 @@
+.more {
+  background-color: #f2f2f2;
+}
+.more .more-header {
+  background-color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.more-header-column {
+  display: flex;
+  align-items: center;
+}
+.more-header-column .more-header-info .more-header-title {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.more-header-column .more-header-info .more-header-subtitle {
+  font-size: 12px;
+  color: #b4b4b4;
+}
+.more-header-column img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.more .more-options,
+.more-plus-friends {
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+.more .more-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.more .more-option-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 15px 15px;
+  color: #523737;
+}
+.more .more-option-list .more-option-title {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.more .more-plus-friends {
+  padding: 20px;
+}
+.more .more-pf-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.more .more-pf-header .more-pf-learnmore {
+  color: #b4b4b4;
+}
+
+.more .more-pf-header .more-pf-item-title {
+  font-size: 16px;
+}
+.more .more-pf-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.more-pf-items .more-pf-item {
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+.more-pf-items .more-pf-item i {
+  margin-right: 20px;
+}
+.more-pf-items .more-pf-item .more-pf-item-title {
+  font-size: 13px;
+}
+.more .more-links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+}
+.more .more-link-item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  align-items: center;
+}
+
+.more .more-link-item .more-link-img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+.more .more-link-item .more-link-title {
+  font-size: 12px;
+}
