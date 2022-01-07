@@ -1,0 +1,34 @@
+@import url(./reset.css);
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.main > li > ul:not(:first-child) {
+  border-top: 1px solid gray;
+  /* background:url(../img/mini/sprite.png) no-repeat -13px -13px; 
+  width: 34px;
+	height: 34px;
+ */
+}
+.main > li {
+}
+.main > li > a {
+  text-align: center;
+  font-size: 34px;
+}
+.main li .sub {
+  display: none;
+}
+
+#wrapper {
+  margin: auto;
+  width: 300px;
+  border: 1px solid gray;
+  color: black;
+}
+.on {
+  color: rgb(129, 239, 247);
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script src="libs/jquery-1.12.4.min.js"></script>
+    <script>
+      $(function () {
+        $("ul").css({
+          display: "flex",
+          listStyle: "none",
+          justifyContent: "space-around",
+        });
+        $("#btn").on("click", function () {
+          $("ul").toggle();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button id="btn"><img src="./img/coco/coco_logo.png" alt="" /></button>
+    <ul>
+      <li><img src="./img/coco/image_01.png" alt="" /></li>
+      <li><img src="./img/coco/image_02.png" alt="" /></li>
+      <li><img src="./img/coco/image_03.png" alt="" /></li>
+      <li><img src="./img/coco/image_04.png" alt="" /></li>
+      <li><img src="./img/coco/image_05.png" alt="" /></li>
+      <li><img src="./img/coco/image_06.png" alt="" /></li>
+    </ul>
+  </body>
+</html>

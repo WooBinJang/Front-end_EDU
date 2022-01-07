@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*function fnc1(a, b) {
+        var num = a * b;
+        return num;
+        alert("실행안됨");
+      }
+      var result = fnc1(10, 3);
+      document.write(result);*/
+
+      var b = 200; //전역변수
+      function fnc2() {
+        var a = 100; //지역변수
+        document.write(b + "<br>");
+        c = 50; // 함수 안에 변수 선언을 안 할 경우 전역변수
+      }
+      fnc2();
+
+      document.write(c + "<br>");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script src="libs/jquery-1.12.4.min.js"></script>
+    <script>
+      $(document).ready(function () {});
+    </script>
+    <style>
+      @import url(css/reset.css);
+      dl {
+        width: 800px;
+        margin: auto;
+      }
+      dt {
+        font-size: 20px;
+        height: 60px;
+        line-height: 60px;
+        border-top: 1px solid #666;
+        cursor: pointer;
+      }
+      dt.on {
+        color: brown;
+      }
+      dd {
+        line-height: 1.5;
+        font-size: 14px;
+        border-top: 1px solid #666;
+        display: none;
+      }
+      .on {
+        background-color: greenyellow;
+      }
+    </style>
+    <script src="./libs/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function () {
+        $("dt").on("click", function () {
+          $(this).next().slideToggle();
+          $(this).next().siblings("dd").slideUp();
+          $(this).toggleClass("on");
+          $(this).siblings().removeClass("on");
+        });
+        /*
+        $("dt").on("click", function () {
+          $("dd").slideUp(0);
+          $(this).next().slideToggle();
+        });   */
+      });
+    </script>
+  </head>
+  <body>
+    <dl>
+      <dt>질문1</dt>
+      <dd>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi hic
+        facilis asperiores nam eius consequuntur tempora impedit ab dolor. Eum
+        non assumenda illum et repellendus tempora ex excepturi ipsum aut
+        asperiores debitis rerum voluptatem temporibus maxime necessitatibus a
+        facere earum, eius voluptatum sequi! Magnam, labore cum aliquam eius ex
+        maxime.
+      </dd>
+      <dt>질문2</dt>
+      <dd>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi hic
+        facilis asperiores nam eius consequuntur tempora impedit ab dolor. Eum
+        non assumenda illum et repellendus tempora ex excepturi ipsum aut
+        asperiores debitis rerum voluptatem temporibus maxime necessitatibus a
+        facere earum, eius voluptatum sequi! Magnam, labore cum aliquam eius ex
+        maxime.
+      </dd>
+      <dt>질문3</dt>
+      <dd>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi hic
+        facilis asperiores nam eius consequuntur tempora impedit ab dolor. Eum
+        non assumenda illum et repellendus tempora ex excepturi ipsum aut
+        asperiores debitis rerum voluptatem temporibus maxime necessitatibus a
+        facere earum, eius voluptatum sequi! Magnam, labore cum aliquam eius ex
+        maxime.
+      </dd>
+    </dl>
+  </body>
+</html>

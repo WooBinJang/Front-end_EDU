@@ -1,0 +1,56 @@
+@import url(./reset.css);
+body {
+  background: url(../img/mario/bg.png) no-repeat center center / cover;
+}
+
+.wrapper {
+  width: 600px;
+  height: 500px;
+  margin: auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.wrapper .header > div {
+  width: 200px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: gray;
+  padding: 25px 0;
+  background: url(../img/mario/pipe-white.png) no-repeat;
+}
+.wrapper .header > div:nth-child(2n) {
+  margin: 0 10px;
+}
+
+.wrapper .header > div .span {
+  text-align: center;
+}
+.wrapper #bottom {
+  width: 561px;
+  height: 148px;
+}
+
+.wrapper .header > div.select {
+  background: url(../img/mario/pipe.png) no-repeat;
+}
+
+.mario {
+  background: url(../img/mario/page01.png) no-repeat;
+}
+.luigi {
+  background: url(../img/mario/page02.png) no-repeat;
+}
+.toad {
+  background: url(../img/mario/page03.png) no-repeat;
+}

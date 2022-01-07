@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/mario.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div>Mario</div>
+        <div>Luigi</div>
+        <div>Toad</div>
+      </div>
+      <div id="bottom"></div>
+    </div>
+    <script src="./libs/jquery-3.6.0.min.js"></script>
+    <script>
+      $(".wrapper > .header > div ").on("click", function () {
+        $(this).toggleClass("select");
+        var state = $(this).hasClass("select");
+        if (state) {
+          $(this).siblings().removeClass("select");
+          if (this.textContent === "Mario") {
+            $(".wrapper #bottom").removeClass();
+            $(".wrapper #bottom").addClass("mario");
+          } else if (this.textContent === "Luigi") {
+            $(".wrapper #bottom").removeClass();
+            $(".wrapper #bottom").addClass("luigi");
+          } else if (this.textContent === "Toad") {
+            $(".wrapper #bottom").removeClass();
+            $(".wrapper #bottom").addClass("toad");
+          }
+        } else {
+          $(this).addClass("select");
+        }
+      });
+    </script>
+  </body>
+</html>

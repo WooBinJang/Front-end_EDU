@@ -36,3 +36,7 @@ body {
 .blind {
   display: none;
 }
+
+* {
+  box-sizing: border-box;
+}

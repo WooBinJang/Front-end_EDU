@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      ul,
+      li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      div {
+        width: 800px;
+        height: 300px;
+        background: red;
+        display: none;
+      }
+      li {
+        float: left;
+        width: 150px;
+        height: 150px;
+        background: blue;
+        margin-right: 20px;
+      }
+    </style>
+    <script src="libs/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function () {
+        $(".btn1").on("click", function () {
+          $("div").slideDown();
+        });
+        $(".btn2").on("click", function () {
+          $("div").slideUp();
+        });
+        $(".btn3").on("click", function () {
+          $("div").slideToggle(36000000);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button class="btn1">show</button>
+    <button class="btn2">hide</button>
+    <button class="btn3">toggle</button>
+    <div></div>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+    </ul>
+  </body>
+</html>

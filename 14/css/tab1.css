@@ -1,0 +1,36 @@
+@import url(./reset.css);
+
+#wrap {
+  width: 980px;
+  margin: 50px auto;
+}
+.tab {
+  position: relative;
+}
+.tab > li {
+  float: left;
+  width: 25%;
+}
+.tab > li > h2 {
+  font-size: 20px;
+  height: 60px;
+  line-height: 60px;
+  background-color: #e0e0e0;
+  padding-left: 20px;
+  cursor: pointer;
+}
+.tab > li > .open {
+  background-color: #fff;
+  color: #048ffb;
+}
+.tab > li > p {
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  padding: 20px;
+  background-color: #fff;
+  display: none;
+}
+.tab > li:first-child > p {
+  display: block;
+}

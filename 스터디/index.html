@@ -10,31 +10,37 @@
   <body>
     <header class="header">
       <h1 class="blind">헤더영역</h1>
-      <div class="header-top">
-        <div class="inner-box">
+      <div class="inner-box">
+        <div class="header-top">
           <div class="header-top-item">
-            <select>
-              <option value="">ko</option>
-              <option value="">eng</option>
+            <select class="header-top-item-language">
+              <option value="">korea</option>
+              <option value="">English</option>
+              <option value="">Japanese</option>
+              <option value="">Chinese</option>
             </select>
           </div>
           <!--header-top-item  -->
           <div class="header-top-item">
-            <h1 class="header-top-logo">Aesop</h1>
+            <a href="#"><h1 class="header-top-logo">Aesop</h1></a>
           </div>
           <!-- header-top-item -->
-          <div class="header-top-item">
+          <div class="header-top-item header-top-item-flex">
             <div class="header-top-item-input">
               <input type="text" />
               <button type="button">
                 <img src="./img/search-btn.png" alt="search" />
               </button>
-              <img src="./img/mypage-icon.png" alt="mypage" />
-              <img src="./img/vector-smart-object.png" alt="vector" />
             </div>
+            <img
+              src="./img/mypage-icon.png"
+              alt="mypage"
+              class="header-top-item-input-mypageimg"
+            />
+            <img src="./img/vector-smart-object.png" alt="vector" />
             <!--header-top-item  -->
           </div>
-          <!--  -->
+          <!-- header-top-item header-top-item-flex -->
         </div>
         <!-- header-top -->
         <div class="header-bottom">
@@ -43,7 +49,7 @@
           </div>
           <!-- header-bottom-item -->
           <nav>
-            <ul>
+            <ul class="gnb">
               <li><a href="#">제품</a></li>
               <li><a href="#">스토어</a></li>
               <li><a href="#">검색</a></li>
@@ -59,10 +65,23 @@
     <main>
       <section class="main-banner">
         <h2 class="blind">메인베너</h2>
-        <img src="./img/mainbanner1.png" alt="mainbanner" />
+        <img
+          src="./img/mainbanner1.png"
+          alt="mainbanner"
+          usemap="#mainbanner"
+        />
+        <map name="mainbanner"
+          ><area
+            shape="rect"
+            alt=""
+            title="mainbanner"
+            coords="360,431,580,490"
+            href="#"
+            target="_blank"
+        /></map>
       </section>
       <section class="main-new-item-content-box">
-        <h2 class="bilnd">메인 뉴 아이템 컨테이너</h2>
+        <h2 class="blind">메인 뉴 아이템 컨테이너</h2>
         <div class="inner-box">
           <h3 class="main-new-item-title">New Item</h3>
           <ul>
@@ -74,44 +93,54 @@
                     alt="화장품1"
                   />
                 </div>
-                <p>[오브 뮤즈 앤드 미스] 파슬리 씨드 안티 옥시던트 세럼</p> </a
-              ><span> 85,000 원 </span>
-            </li>
-            <li>
-              <a href="#"
-                ><div class="main-new-item-img">
-                  <img
-                    src="/img/aesop-kits-gift-kits-2019-20-the-melodist-with-product-large-1434-x-962-px.png"
-                    alt="화장품1"
-                  />
+                <div class="main-new-item-info">
+                  <p>[오브 뮤즈 앤드 미스]</p>
+                  <p>파슬리 씨드 안티 옥시던트 세럼</p>
+                  <span> 85,000 원 </span>
                 </div>
-                <p>[오브 뮤즈 앤드 미스] 파슬리 씨드 안티 옥시던트 세럼</p>
               </a>
-              <span> 85,000 원 </span>
             </li>
             <li>
               <a href="#"
                 ><div class="main-new-item-img">
                   <img
-                    src="/img/aesop-kits-gift-kits-2019-20-the-melodist-with-product-large-1434-x-962-px.png"
+                    src="/img/aesop-kits-gift-kits-2019-20-the-humourist-with-product-large-1434-x-962-px.png"
                     alt="화장품1"
                   />
                 </div>
-                <p>[오브 뮤즈 앤드 미스] 파슬리 씨드 안티 옥시던트 세럼</p>
+                <div class="main-new-item-info">
+                  <p>[오브 뮤즈 앤드 미스]</p>
+                  <p>파슬리 씨드 안티 옥시던트 세럼</p>
+                  <span> 85,000 원 </span>
+                </div>
               </a>
-              <span> 85,000 원 </span>
             </li>
             <li>
               <a href="#"
                 ><div class="main-new-item-img">
                   <img
-                    src="/img/aesop-kits-gift-kits-2019-20-the-melodist-with-product-large-1434-x-962-px.png"
+                    src="/img/aesop-kits-gift-kits-2019-20-the-chronicler-with-product-large-1434-x-962-px.png"
                     alt="화장품1"
                   />
                 </div>
-                <p>[오브 뮤즈 앤드 미스] 파슬리 씨드 안티 옥시던트 세럼</p>
+                <div class="main-new-item-info">
+                  <p>[오브 뮤즈 앤드 미스]</p>
+                  <p>파슬리 씨드 안티 옥시던트 세럼</p>
+                  <span> 85,000 원 </span>
+                </div>
               </a>
-              <span> 85,000 원 </span>
+            </li>
+            <li>
+              <a href="#"
+                ><div class="main-new-item-img">
+                  <img src="/img/new-5.png" alt="화장품1" />
+                </div>
+                <div class="main-new-item-info">
+                  <p>[오브 뮤즈 앤드 미스]</p>
+                  <p>파슬리 씨드 안티 옥시던트 세럼</p>
+                  <span> 85,000 원 </span>
+                </div>
+              </a>
             </li>
             <li>
               <a href="#"
@@ -121,8 +150,12 @@
                     alt="화장품1"
                   />
                 </div>
-                <p>[오브 뮤즈 앤드 미스] 파슬리 씨드 안티 옥시던트 세럼</p> </a
-              ><span> 85,000 원 </span>
+                <div class="main-new-item-info">
+                  <p>[오브 뮤즈 앤드 미스]</p>
+                  <p>파슬리 씨드 안티 옥시던트 세럼</p>
+                  <span> 85,000 원 </span>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -134,87 +167,95 @@
           <h3 class="main-best-item-title">Best Item of Aesop</h3>
           <ul>
             <li>
-              <a href="#"
+              <a href="https://www.naver.com"
                 ><div class="main-best-item-img">
                   <img
                     src="/img/aesop-skin-parsley-seed-anti-oxidant-serum-100-m-l-large.png"
                     alt="화장품1"
                   />
                 </div>
-                <p>파슬리 씨드 안티 옥시던트 세럼</p>
+                <div class="main-best-item-info">
+                  <p>파슬리 씨드 안티 옥시던트 세럼</p>
               </a>
               <span> 85,000 원 </span>
-              <div class="main-best-item-star">
-                <span><img src="./img/star.png" alt="별점" /></span>
-                <span><img src="./img/star.png" alt="별점" /></span>
-                <span><img src="./img/star.png" alt="별점" /></span>
-                <span><img src="./img/star.png" alt="별점" /></span>
-                <span><img src="./img/star.png" alt="별점" /></span>
-              </div>
+                  <div class="main-best-item-star">
+                    <span><img src="./img/star.png" alt="별점" /></span>
+                    <span><img src="./img/star.png" alt="별점" /></span>
+                    <span><img src="./img/star.png" alt="별점" /></span>
+                    <span><img src="./img/star.png" alt="별점" /></span>
+                    <span><img src="./img/star.png" alt="별점" /></span>
+                  </div>
+                </div>
             </li>
             <li>
               <a href="#"
                 ><div class="main-best-item-img">
                   <img
-                    src="/img/aesop-skin-parsley-seed-anti-oxidant-serum-100-m-l-large.png"
+                    src="/img/aesop-body-resurrection-aromatique-hand-balm-75-m-l-large.png"
                     alt="화장품1"
                   />
                 </div>
-                <p>파슬리 씨드 안티 옥시던트 세럼</p>
-              </a>
-              <span> 85,000 원 </span>
-              <div class="main-best-item-star">
-                <span><img src="./img/star.png" alt="별점" /></span>
-                <span><img src="./img/star.png" alt="별점" /></span>
-                <span><img src="./img/star.png" alt="별점" /></span>
-                <span><img src="./img/star.png" alt="별점" /></span>
-                <span><img src="./img/star.png" alt="별점" /></span>
-              </div>
+                <div class="main-best-item-info">
+                  <p>레저렉션 아로마틱 핸드 밤</p>
+                </a>
+                <span> 31,000 원 </span>
+                  <div class="main-best-item-star">
+                    <span><img src="./img/star.png" alt="별점" /></span>
+                    <span><img src="./img/star.png" alt="별점" /></span>
+                    <span><img src="./img/star.png" alt="별점" /></span>
+                    <span><img src="./img/star.png" alt="별점" /></span>
+                    <span><img src="./img/star.png" alt="별점" /></span>
+                  </div>
+                </div>
             </li>
             <li>
               <a href="#"
                 ><div class="main-best-item-img">
                   <img
-                    src="/img/aesop-skin-parsley-seed-anti-oxidant-serum-100-m-l-large.png"
+                    src="/img/aesop-body-rejuvenate-intensive-body-balm-120-m-l-large.png"
                     alt="화장품1"
                   />
                 </div>
-                <p>파슬리 씨드 안티 옥시던트 세럼</p>
-              </a>
-              <span> 85,000 원 </span>
-              <div class="main-best-item-star">
-                <span><img src="./img/star.png" alt="별점" /></span>
-                <span><img src="./img/star.png" alt="별점" /></span>
-                <span><img src="./img/star.png" alt="별점" /></span>
-                <span><img src="./img/star.png" alt="별점" /></span>
-                <span><img src="./img/star.png" alt="별점" /></span>
-              </div>
+                <div class="main-best-item-info">
+                  <p>레쥬비네이트 인텐시브 바디 밤</p>
+                </a>
+                <span> 43,000 원 </span>
+                  <div class="main-best-item-star">
+                    <span><img src="./img/star.png" alt="별점" /></span>
+                    <span><img src="./img/star.png" alt="별점" /></span>
+                    <span><img src="./img/star.png" alt="별점" /></span>
+                    <span><img src="./img/star.png" alt="별점" /></span>
+                    <span><img src="./img/star.png" alt="별점" /></span>
+                  </div>
+                </div>
             </li>
             <li>
               <a href="#"
                 ><div class="main-best-item-img">
                   <img
-                    src="/img/aesop-skin-parsley-seed-anti-oxidant-serum-100-m-l-large.png"
+                    src="/img/aesop-fragrance-tacit-eau-de-parfum-50-m-l-large-684-x-668-px.png"
                     alt="화장품1"
                   />
                 </div>
-                <p>파슬리 씨드 안티 옥시던트 세럼</p>
-              </a>
-              <span> 85,000 원 </span>
-              <div class="main-best-item-star">
-                <span><img src="./img/star.png" alt="별점" /></span>
-                <span><img src="./img/star.png" alt="별점" /></span>
-                <span><img src="./img/star.png" alt="별점" /></span>
-                <span><img src="./img/star.png" alt="별점" /></span>
-                <span><img src="./img/star.png" alt="별점" /></span>
-              </div>
+                <div class="main-best-item-info">
+                  <p>테싯 오 드 퍼퓸</p>
+                </a>
+                <span> 130,000 원 </span>
+                  <div class="main-best-item-star">
+                    <span><img src="./img/star.png" alt="별점" /></span>
+                    <span><img src="./img/star.png" alt="별점" /></span>
+                    <span><img src="./img/star.png" alt="별점" /></span>
+                    <span><img src="./img/star.png" alt="별점" /></span>
+                    <span><img src="./img/star.png" alt="별점" /></span>
+                  </div>
+                </div>
             </li>
           </ul>
         </div>
         <!--inner-box  -->
       </section>
       <section class="main-info-content-box">
-        <h2 class="bilnd">메인 정보 관련 컨테이너</h2>
+        <h2 class="blind">메인 정보 관련 컨테이너</h2>
         <div class="inner-box">
           <h3 class="main-info-title">WHAT MAKES US DIFFERENT</h3>
           <ul>
@@ -223,31 +264,38 @@
                 ><div class="main-info-img">
                   <img src="/img/ellipse-1.png" alt="화장품1" />
                 </div>
-                <p>100% 동물실험 배제</p>
+                <p>100% <br>동물실험 배제</p>
               </a>
             </li>
             <li>
               <a href="#"
                 ><div class="main-info-img">
-                  <img src="/img/ellipse-1.png" alt="화장품1" />
+                  <img src="/img/whatmake2.png" alt="화장품1" />
                 </div>
-                <p>100% 동물실험 배제</p>
+                <p>거의 모든 제품에 <br>
+                  착색제, 미네랄 오일, <br>
+                  실리콘, 파라벤 및 합성 향료 화합물 <br>
+                  미사용 </p>
               </a>
             </li>
             <li>
               <a href="#"
                 ><div class="main-info-img">
-                  <img src="/img/ellipse-1.png" alt="화장품1" />
+                  <img src="/img/ellipse-3.png" alt="화장품1" />
                 </div>
-                <p>100% 동물실험 배제</p>
+                <p>재활용 플라스틱과 <br>
+                  알루미늄을 활용한 제품용기,<br>
+                  자외선으로부터 보호를 위한<br>
+                  갈색 용기</p>
               </a>
             </li>
             <li>
               <a href="#"
                 ><div class="main-info-img">
-                  <img src="/img/ellipse-1.png" alt="화장품1" />
+                  <img src="/img/ellipse-4.png" alt="화장품1" />
                 </div>
-                <p>100% 동물실험 배제</p>
+                <p>좋은 원료의 사용<br>
+                  가격의 80%를 원료에 투자</p>
               </a>
             </li>
           </ul>
@@ -255,24 +303,29 @@
         <!--inner-box  -->
       </section>
       <section class="main-bottom-banner">
-        <h2 class="bilnd">하단 배너</h2>
-        <div class="main-bottom-banner-left">
-          <h4>New Store</h4>
-          <span>이솝 롯데 수지</span>
-          <p>경기도 용인시 수지구 성복동 789 롯데 수지몰 1층 031-5174-4118</p>
-          <p>
-            최근에 오픈한 이솝 스토어에서 소중한 사람을 위한 시즈널 기프트를
-            만나보세요.
-          </p>
-          <a href="#">더 알아보기</a>
+        <h2 class="blind">하단 배너</h2>
+        <div class="inner-box">
+          <div class="main-bottom-banner-left">
+            <h4>New Store</h4>
+            <span>이솝 롯데 수지</span>
+            <p class="main-bottom-banner-left-text1">경기도 용인시 수지구 성복동 789 롯데 수지몰 1층 <br>031-5174-4118</p>
+            <p class="main-bottom-banner-left-text2">
+              최근에 오픈한 이솝 스토어에서 소중한 사람을 위한<br> 시즈널 기프트를
+              만나보세요.
+            </p>
+            <a href="#">더 알아보기</a>
+          </div>
+          <!-- main-bottom-banner-lef -->
+          <div class="main-bottom-banner-right">
+            <img src="./img/layer-16.png" alt="하단 배너 이미지" />
+            <div class="main-bottom-banner-right-arrow">  
+              <a href="#"><img src="./img/prev.png" alt="prev" /></a>
+              <a href="#"><img src="./img/next.png" alt="next" /></a>
+            </div>
+          </div>
+          <!--main-bottom-banner-right  -->
         </div>
-        <!-- main-bottom-banner-lef -->
-        <div class="main-bottom-banner-right">
-          <img src="./img/layer-16.png" alt="하단 배너 이미지" />
-          <a href="#"><img src="./img/prev.png" alt="prev" /></a>
-          <a href="#"><img src="./img/next.png" alt="prev" /></a>
-        </div>
-        <!--main-bottom-banner-right  -->
+       
       </section>
       <section class="main-sns-content-box">
         <div class="inner-box">
@@ -290,55 +343,138 @@
             <li>
               <a href="#"
                 ><div class="main-info-img">
-                  <img src="/img/layer-8.png" alt="sns1" />
+                  <img src="/img/layer-6.png" alt="sns1" />
                 </div>
-                <p>#향기로워</p>
+                <p>#내사랑</p>
               </a>
             </li>
             <li>
               <a href="#"
                 ><div class="main-info-img">
-                  <img src="/img/layer-8.png" alt="sns1" />
+                  <img src="/img/layer-9.png" alt="sns1" />
                 </div>
-                <p>#향기로워</p>
+                <p>#최고의 선물</p>
               </a>
             </li>
             <li>
               <a href="#"
                 ><div class="main-info-img">
-                  <img src="/img/layer-8.png" alt="sns1" />
+                  <img src="/img/layer-11.png" alt="sns1" />
                 </div>
-                <p>#향기로워</p>
+                <p>#파우치</p>
               </a>
             </li>
           </ul>
         </div>
       </section>
       <section class="main-comment-content-box">
-        <h2 class="bilnd">comment</h2>
+        <h2 class="blind">comment</h2>
         <img src="./img/comment.png" alt="comment" />
       </section>
     </main>
     <footer>
       <div class="footer-top">
-        <img src="./img/to-the-top.png" alt="위로가기" />
-        <div class="footer-top-topbox">
-          <p>가장 빠르게 Aesop의 최신 소식을 만나세요</p>
-          <p>
-            이솝 제품의 서비스, 상점, 행사 및 문화적 관심사에 관한 뉴스레터를
-            받을 수 있습니다.
-          </p>
-          <div class="footer-top-topbox-input">
-            <input type="text" placeholder="이메일을 입력하세요." />
-            <button type="button">구독하기</button>
-          </div>
-          <!--footer-top-topbox-input  -->
-        </div>
-        <!-- footer-top-topbox -->
+        <div class="inner-box">
+          <div class="footer-top-topbox">
+              <img src="./img/to-the-top.png" alt="위로가기" />
+              <p class="footer-top-topbox-text1">가장 빠르게 Aesop의 최신 소식을 만나세요</p>
+              <p class="footer-top-topbox-text2">
+                이솝 제품의 서비스, 상점, 행사 및 문화적 관심사에 관한 뉴스레터를
+                받을 수 있습니다.
+              </p>
+              <div class="footer-top-topbox-input">
+                <input type="text" placeholder="이메일을 입력하세요." />
+                <button type="button">구독하기</button>
+              </div>
+              <!--footer-top-topbox-input  -->
+            </div>
+            <!-- footer-top-topbox -->
+          <div class="footer-top-bottombox">
+            <ul class="footer-top-bottombox-dep1">
+              <li>
+                <a href="#">문의하기</a>
+                <ul class="footer-top-bottombox-dep2">
+                  <li><a href="#">문의하기</a></li>
+                  <li><a href="#">FAQS</a></li>
+                  <li><a href="#">배송 및 반품</a></li>
+                  <li><a href="#">배송확인</a></li>
+                  <li><a href="#"> 이용 약관</a></li>
+                  <li><a href="#"> 개인정보 정책</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">브랜드 소개</a>
+                <ul class="footer-top-bottombox-dep2">
+                  <li><a href="#">브랜드 스토리</a></li>
+                  <li><a href="#">채용</a></li>
+                  <li><a href="#">마케팅 문의</a></li>
+                  <li><a href="#">기업용 선물</a></li>
+                  <li><a href="#">페이셜 어포인트먼트</a></li>`
+                </ul>
+              </li>
+              <li>
+                <a href="#">매장찾기</a>
+                <ul class="footer-top-bottombox-dep2">
+                  <li><a href="#">매장찾기</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">언어 설정</a>
+                <ul class="footer-top-bottombox-dep2">
+                  <li><a href="#">한국</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="footer-top-bottombox-sns"> 
+              <span><img src="./img/sns-in.png" alt="in" /></span>
+              <span><img src="./img/sns-tw.png" alt="tw" /></span>
+              <span><img src="./img/sns-iin.png" alt="iin" /></span>
+              <span><img src="./img/sns-p.png" alt="p" /></span>
+              <span><img src="./img/sns-naver.png" alt="naver" /></span>
+            </div>
+           
+          </div><!-- footer-top-bottombox -->
+        </div><!-- inner-box -->
       </div>
-      <!--footer-top  -->
-      <div class="footer-top-bottombox"></div>
-      <div class="footer-bottom"></div>
+        <!-- footer-top -->
+        <div class="footer-bottom">
+          <p>
+            상호: 이솝코리아 유한회사 | 주소: 서울특별시 강남구 선릉로 162길 3
+            이솝코리아 3층 | 대표자: 마이클안토니오키프 | 대표전화: 1800-1987 |
+          </p>
+          <p>
+            대표 이메일: aesop@aesop.com | 호스팅 사업자: SAP Hybris | 사업자
+            등록 번호: 220-88-56014 | 통신판매업 신고번호: 2014-서울강남-02300
+          </p>
+        </div><!--footer-bottom  -->
+    
     </footer>
+    <div class="chat">
+      <div class="chat-img-box">
+        <button type="button"><img src="./img/chat-open-btn.png" alt="채팅버튼" /></button>
+        <div class="chat-box">
+          <div class="chat-box-header">
+            <span>Chat with us</span>
+          </div><!-- chat-box-header -->
+          <div class="chat-box-main">
+            <div class="chat-box-main-profile">
+              <strong>A</strong>
+            </div><!-- chat-box-main-profile -->
+            <div class="chat-box-main-talk-box">
+              <span>Aesop</span>
+              <p class="chat-box-main-talk-box-text1">안녕하세요. 고객님<br> 궁금하신 점을 물어보세요</p>
+              <p class="chat-box-main-talk-box-text2"> (상담중일 경우, 다소 늦어질 수 있습니다.<br> 잠시만 기다려 주세요)
+              </p>
+            </div><!-- chat-box-main-talk-box -->
+          </div><!-- chat-box-main -->
+          <div class="chat-box-bottom">
+            <input type="text">
+            <button type="button">전송</button>
+          </div><!-- chat-box-bottom -->
+        </div><!-- chat-box -->
+      </div><!-- chat-img-box -->
+    
+    </div><!-- chat -->
+    <script src="./chat.js"></script>
   </body>
 </html>

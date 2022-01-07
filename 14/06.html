@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <h1>노드 알아보기</h1>
+    <div id="js">자바스크립트</div>
+    <p id="study">공부하기</p>
+    <div id="inTxt">adsdasas</div>
+    <script>
+      // document.querySelector("#inTxt").innerHTML =
+      //   document.childNodes[1].childNodes[1].nodeName;
+      var str1 = document.querySelector("#js").firstChild.nodeValue;
+      document.querySelector("#inTxt").innerHTML = str1;
+    </script>
+  </body>
+</html>
