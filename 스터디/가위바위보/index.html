@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>가위바위보</title>
+  </head>
+  <body>
+    <header>
+      <h1>가위바위보 게임을 해봅시다.</h1>
+    </header>
+    <main>
+      <section class="gamer-count main-item">
+        <h2 class="count-title">com</h2>
+        <h3 class="count-score">0점</h3>
+      </section>
+      <section class="R-P-S main-item">
+        <span class="R-P-S-item item1"><img src="./img/1.png" alt="" /></span>
+      </section>
+      <section class="user-count main-item">
+        <h2 class="count-title">user</h2>
+        <h3 class="count-score">0점</h3>
+      </section>
+    </main>
+    <footer>
+      <button id="scissors" type="button">
+        <img src="./img/2.png" alt="가위" />
+      </button>
+      <button id="paper" type="button">
+        <img src="./img/1.png" alt="보자기" />
+      </button>
+      <button id="rock" type="button">
+        <img src="./img/3.png" alt="바위" />
+      </button>
+      <button id="reset" type="button">
+        <img src="./img/invalid-name.png" alt="리셋" />
+      </button>
+    </footer>
+  </body>
+  <script src="./libs/jquery-3.4.1.min.js"></script>
+  <script src="./index.js"></script>
+</html>

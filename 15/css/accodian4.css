@@ -1,0 +1,142 @@
+body,
+ul,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  background-image: url(../img/moon/star.png);
+  font-size: 16px;
+  color: #333;
+}
+
+/* CSS3 */
+::selection {
+  background-color: transparent;
+}
+
+.star {
+  width: 200px;
+  height: 200px;
+  margin-left: -100px;
+
+  border-radius: 100%;
+
+  position: absolute;
+  left: 50%;
+  top: 45px;
+
+  cursor: pointer;
+}
+
+.star#sun {
+  background-color: yellow;
+  box-shadow: 0 0 40px yellow;
+}
+
+.star#moon {
+  background-color: black;
+  left: 70%;
+  position: relative;
+  opacity: 0;
+}
+
+#acco {
+  width: 960px;
+  margin: 300px auto;
+
+  border: 1px solid #ccc;
+  border-radius: 20px;
+
+  padding: 20px;
+}
+
+#acco li {
+  border-top: 2px solid transparent;
+  border-bottom: 1px solid #ddd;
+}
+
+#acco li:last-child {
+  border-bottom-color: transparent;
+}
+
+#acco li h2 {
+  height: 40px;
+  line-height: 40px;
+  text-indent: 10px;
+  font-size: 1em;
+
+  cursor: pointer;
+
+  background-image: url(../img/moon/plus-minus.png);
+
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+#acco li p.acco-body {
+  padding: 20px;
+  display: none;
+
+  font-size: 0.8em;
+}
+
+#acco li.active {
+  background-color: #e8f1fb;
+  border-color: #4a72ae;
+}
+
+#acco li.active h2 {
+  background-position: bottom right;
+}
+
+/* Night */
+body.night {
+  background-color: black;
+}
+
+body.night #acco {
+  width: 960px;
+  margin: 300px auto;
+
+  border: 1px solid #ccc;
+  border-radius: 20px;
+
+  padding: 20px;
+}
+
+body.night #acco li {
+  border-top: 2px solid transparent;
+  border-bottom: 1px solid #ddd;
+}
+
+body.night #acco li:last-child {
+  border-bottom-color: transparent;
+}
+
+body.night #acco li h2 {
+  color: #999;
+}
+
+body.night #acco li p.acco-body {
+  padding: 20px;
+  display: none;
+
+  font-size: 0.8em;
+}
+
+body.night #acco li.active {
+  background-color: #0b223e;
+  color: #ddd;
+  border-color: #597dab;
+}
+
+body.night #acco li.active h2 {
+  color: #597dab;
+}

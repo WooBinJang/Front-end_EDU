@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background: red;
+        margin-bottom: 50px;
+      }
+
+      div.on {
+        width: 600px;
+        margin-left: 300px;
+        opacity: 0.5;
+        transition: all 1s;
+      }
+    </style>
+    <script src="libs/jquery-1.12.4.min.js"></script>
+  </head>
+  <body>
+    <button class="btn1">버튼1</button>
+    <button class="btn2">버튼2</button>
+    <div id="box1">animate메서드</div>
+    <script>
+      /*
+          $(".btn1").on("click", function () {
+            $("#box1").animate(
+              {
+                width: "600px",
+                opacity: "0.5",
+                marginLeft: "300px",
+              },
+              1000
+            );
+          });
+  
+          $(".btn2").on("click", function () {
+            $("#box1").animate(
+              {
+                width: "100px",
+                opacity: "1",
+                marginLeft: "0",
+              },
+              1000
+            );
+          });
+          */
+      $(".btn1").on("click", function () {
+        console.log("Asdads");
+        $("div").addClass("on");
+      });
+
+      $(".btn2").on("click", function () {
+        $("div").removeClass("on");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      @import url(css/reset.css);
+      .slideWrap {
+        width: 600px;
+        height: 200px;
+        margin: 20px auto;
+        border: 3px solid #333;
+        position: relative;
+        overflow: hidden;
+      }
+      .slide {
+        position: absolute;
+        left: 0;
+        top: 200px;
+      }
+      .slide:first-child {
+        top: 0;
+      }
+      .slide li {
+        float: left;
+      }
+
+      /*버튼 pager indicator pagenation */
+      .boxWrap {
+        width: 600px;
+        margin: auto;
+      }
+      .box {
+        float: left;
+        width: 200px;
+        height: 200px;
+        background: url(img/box/box.png) no-repeat;
+        text-indent: -9999px;
+      }
+      .box.open {
+        background-image: url(img/box/open.png);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slideWrap">
+      <ul class="slide clearfix">
+        <li><img src="img/box/bag01.png" alt="" /></li>
+        <li><img src="img/box/bag02.png" alt="" /></li>
+        <li><img src="img/box/bag03.png" alt="" /></li>
+      </ul>
+      <ul class="slide clearfix">
+        <li><img src="img/box/shoe01.png" alt="" /></li>
+        <li><img src="img/box/shoe02.png" alt="" /></li>
+        <li><img src="img/box/shoe03.png" alt="" /></li>
+      </ul>
+      <ul class="slide clearfix">
+        <li><img src="img/box/acc01.png" alt="" /></li>
+        <li><img src="img/box/acc02.png" alt="" /></li>
+        <li><img src="img/box/acc03.png" alt="" /></li>
+      </ul>
+    </div>
+    <div class="boxWrap">
+      <ul>
+        <li class="box">박스1</li>
+        <li class="box">박스2</li>
+        <li class="box">박스3</li>
+      </ul>
+    </div>
+    <script src="./libs/jquery-3.4.1.min.js"></script>
+    <script>
+      $(".box").on("click", function () {
+        $(this).addClass("open");
+        $(this).siblings().removeClass("open");
+        var index = $(this).index();
+        $(".slide").eq(index).animate({ top: "0" });
+        $(".slide").eq(index).siblings().animate({ top: "200px" });
+      });
+    </script>
+  </body>
+</html>
