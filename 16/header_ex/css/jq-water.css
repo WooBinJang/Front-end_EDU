@@ -1,0 +1,47 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
+body{font-family: 'Nanum Gothic', sans-serif;word-break: keep-all}
+header{height: 116px;border-bottom: 1px solid #efefef;position: relative}
+.inner{width: 1280px;margin: auto;position: relative}
+header h1{float: left;margin-top: 30px;}
+header h1 a{display: block;background: url(../img/water/logo.png) no-repeat;width: 121px;height: 54px;text-indent: -9999px}
+header .nav_area{float: right;width: 1015px;}
+.top_menu{height: 50px;}
+.top_menu ul{float: right;margin-top: 10px;margin-bottom: 10px}
+.top_menu ul li{float: left;height: 30px;line-height: 30px}
+.top_menu ul li.btn_search a{display: block;background: url(../img/water/totalsearch_ico.png) no-repeat center;width: 30px;height: 30px;text-indent: -9999px}
+
+.main>li{float: left;width: 145px;position: relative}
+.main>li>a{display: block;text-align: center;font-size: 24px;font-weight: bold;color:#555;height: 32px;line-height: 32px;position: relative}
+
+.main>li:hover>a{color:#1681cc}
+.main>li:hover>.sub{background-color: #eff5ff}
+
+.main>li>a::after{position: absolute;content: '';width:0;height: 4px;background-color:#1681cc;display:block;margin: auto;left:0;right: 0;top:62px;}
+.main>li:hover>a::after{width: 70%;transition: width 0.45s}
+
+.sub{position: absolute;top:66px;width: 100%;box-sizing: border-box;height: 275px;z-index: 1000;padding: 10px;display: none}
+.sub>li{margin-top: 5px;font-size: 14px;letter-spacing: -1px}
+
+.nav_all_bg{position: absolute;left:0;top:117px;width: 100%;height: 275px; background: #fff;display: none}
+
+/*검색박스*/
+
+.search_box{width: 1280px;height: 95px;background: rgba(19,119,191,0.85);position: absolute;z-index: 3000;top:118px;left:0;box-sizing: border-box;padding: 25px 0;display: none}
+.search_box form{width: 580px;margin: auto;height: 45px;}
+.search_box form fieldset>*{float: left;display: block;height: 45px;box-sizing: border-box}
+.search_box form fieldset legend{display: none}
+
+.search_box label{width: 42px;text-indent: -9999px;background: url(../img/water/totalsearch_ico.png) no-repeat center #fff;border:none}
+
+.search_box input[type="text"]{width: 420px;border:none}
+.search_box input[type="submit"]{width:65px;background: #004db5;color:#fff;border:none;font-size: 17px}
+.search_box .search_close_btn{margin-left: 3px;width: 50px;background-color: #103a5c;text-align: center;padding-top: 15px;}
+.search_box .search_close_btn:hover img{transform: rotate(360deg);transition: all 0.5s}
+
+
+.mainvisual{height: 700px;background-color: cornflowerblue}
+
+
+

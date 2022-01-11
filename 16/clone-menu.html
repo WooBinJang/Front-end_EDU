@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      @import url(css/reset.css);
+      html,
+      body {
+        height: 100%;
+        background: url(img/gallery/08.jpg) no-repeat center;
+        background-size: cover;
+      }
+      .gnb {
+        position: fixed;
+        left: 100px;
+        top: 100px;
+        z-index: 100;
+      }
+      .gnb li {
+        height: 60px; /*border:5px solid green;*/
+        overflow: hidden;
+      }
+      .gnb li a {
+        display: block;
+        height: 60px;
+        line-height: 60px;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: "arial";
+        color: #fff;
+        opacity: 0.6;
+        position: relative;
+      }
+    </style>
+    <script src="libs/jquery-1.12.4.min.js"></script>
+  </head>
+  <body>
+    <ul class="gnb">
+      <li><a href="#">Menu1</a></li>
+      <li><a href="#">Menu2</a></li>
+      <li><a href="#">Menu3</a></li>
+      <li><a href="#">Menu4</a></li>
+    </ul>
+  </body>
+  <script>
+    // var newA = $(".gnb li").eq(0).children("a").clone(true);
+    // newA.css({ opacity: 1 });
+    // $(".gnb li").eq(0).append(newA);
+    // $(".gnb li")
+    //   .eq(0)
+    //   .on("mouseenter", function () {
+    //     $(this).children("a").stop().animate({ top: "-60px" });
+    //   });
+    // $(".gnb li")
+    //   .eq(0)
+    //   .on("mouseleave", function () {
+    //     $(this).children("a").stop().animate({ top: "0" });
+    //   });
+
+    for (let i = 0; i < $(".gnb li").length; i++) {
+      var newA = $(".gnb li").eq(i).children("a").clone(true);
+      newA.css({ opacity: 1 });
+      $(".gnb li").eq(i).append(newA);
+      $(".gnb li")
+        .eq(i)
+        .on("mouseenter", function () {
+          $(this).children("a").stop().animate({ top: "-60px" });
+        });
+      $(".gnb li")
+        .eq(i)
+        .on("mouseleave", function () {
+          $(this).children("a").stop().animate({ top: "0" });
+        });
+    }
+  </script>
+</html>

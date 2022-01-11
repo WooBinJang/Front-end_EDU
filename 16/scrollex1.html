@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <!-- 제이쿼리 라이브러리-->
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      type="text/javascript"
+    ></script>
+    <script>
+      $(function () {
+        $("div").on("scroll", function () {
+          var scrollValue = $(this).scrollTop();
+          console.log(scrollValue);
+        });
+
+        $("#btn1").on("click", function () {
+          $("div").scrollTop(500);
+        });
+        $("#btn2").on("click", function () {
+          $("div").animate({ scrollTop: "500px" });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button id="btn1">클릭</button>
+    <button id="btn2">애니메이션클릭</button>
+    <div style="width: 300px; height: 300px; overflow: auto">
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+      ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+      dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
+      nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+      Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.In enim
+      justo, rhoncus ut Lorem ipsum dolor sit amet, consectetuer adipiscing
+      elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+      penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+      quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+      consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+      vulputate eget, arcu.In enim justo, rhoncus ut Lorem ipsum dolor sit amet,
+      consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+      massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+      nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+      pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+      fringilla vel, aliquet nec, vulputate eget, arcu.In enim justo, rhoncus ut
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+      ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+      dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
+      nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+      Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.In enim
+      justo, rhoncus ut Lorem ipsum dolor sit amet, consectetuer adipiscing
+      elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+      penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+      quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+      consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+      vulputate eget, arcu.In enim justo, rhoncus ut Lorem ipsum dolor sit amet,
+      consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+      massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+      nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+      pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+      fringilla vel, aliquet nec, vulputate eget, arcu.In enim justo, rhoncus ut
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+      ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+      dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
+      nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+      Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.In enim
+      justo, rhoncus ut
+    </div>
+  </body>
+</html>

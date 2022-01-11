@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      @import url(css/reset.css);
+      body {
+        background: #333;
+      }
+      h1 {
+        position: fixed;
+        right: 0;
+        top: 0;
+        margin: 30px;
+        padding: 10px 30px;
+        background: rgba(0, 0, 0, 0.75);
+        z-index: 1000;
+        border-radius: 30px;
+        color: #fff;
+        font-family: "arial";
+      }
+      h2 {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        font-size: 300px;
+        color: rgba(255, 255, 255, 0.65);
+        z-index: 500;
+        margin: 30px;
+      }
+
+      .gnb {
+        position: fixed;
+        left: 0;
+        top: 0;
+        margin: 30px;
+        width: 500px;
+        height: 50px;
+        z-index: 700;
+        background: rgba(0, 0, 0, 0.75);
+        border-radius: 40px;
+      }
+      .gnb li {
+        float: left;
+        width: 20%;
+      }
+      .gnb li a {
+        font-size: 20px;
+        display: block;
+        height: 50px;
+        line-height: 50px;
+        color: #999;
+        text-align: center;
+      }
+      /*제이쿼리에서 addClass()*/
+      .gnb li.on a {
+        color: #fff;
+      }
+
+      .section {
+        height: 500px;
+        position: relative;
+        overflow: hidden;
+      }
+      .one {
+        background-color: burlywood;
+      }
+      .two {
+        background-color: cadetblue;
+      }
+      .three {
+        background-color: crimson;
+      }
+      .four {
+        background-color: cornflowerblue;
+      }
+      .five {
+        background-color: coral;
+      }
+
+      .section::before {
+        content: "0";
+        margin: 20px;
+        color: #fff;
+        font-size: 50px;
+        position: absolute;
+        top: 0;
+      }
+      .section::after {
+        content: "500";
+        margin: 20px;
+        color: #fff;
+        font-size: 50px;
+        position: absolute;
+        bottom: 0;
+      }
+
+      .section.two::before {
+        content: "501";
+      }
+      .section.three::before {
+        content: "1001";
+      }
+      .section.four::before {
+        content: "1501";
+      }
+      .section.five::before {
+        content: "2001";
+      }
+
+      .section.two::after {
+        content: "1000";
+      }
+      .section.three::after {
+        content: "1500";
+      }
+      .section.four::after {
+        content: "2000";
+      }
+      .section.five::after {
+        content: "2500";
+      }
+    </style>
+  </head>
+  <body>
+    <h1>scrollTop:<span>0</span></h1>
+    <h2>1</h2>
+    <ul class="gnb">
+      <li><a href="#">ONE</a></li>
+      <li><a href="#">TWO</a></li>
+      <li><a href="#">THREE</a></li>
+      <li><a href="#">FOUR</a></li>
+      <li><a href="#">FIVE</a></li>
+    </ul>
+    <div class="section one"></div>
+    <div class="section two"></div>
+    <div class="section three"></div>
+    <div class="section four"></div>
+    <div class="section five"></div>
+    <div style="height: 2000px"></div>
+    <script src="libs/jquery-1.12.4.min.js"></script>
+    <script>
+      $(window).on("scroll", function () {
+        var nowScroll = $("html,body").scrollTop();
+        // 현재 스크롤 탑 값
+        $("h1 span").text(nowScroll);
+        var num;
+        if (nowScroll >= 0 && nowScroll < 500) {
+          num = 0;
+        } else if (nowScroll >= 500 && nowScroll < 1000) {
+          num = 1;
+        } else if (nowScroll >= 1000 && nowScroll < 1500) {
+          num = 2;
+        } else if (nowScroll >= 1500 && nowScroll < 2000) {
+          num = 3;
+        } else if (nowScroll >= 2000) {
+          num = 4;
+        }
+        console.log(num);
+        $("h2").text(num + 1);
+        $(".gnb li").eq(num).addClass("on");
+        $(".gnb li").eq(num).siblings().removeClass("on");
+      });
+    </script>
+  </body>
+</html>

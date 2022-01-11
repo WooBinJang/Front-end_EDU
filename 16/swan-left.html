@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      @import url(css/reset.css);
+      .banner {
+        width: 600px;
+        height: 350px;
+        margin: 100px auto;
+        position: relative;
+        border: 2px solid #000;
+        overflow: hidden;
+      }
+      .banner li {
+        position: absolute;
+        top: 0;
+      }
+    </style>
+    <script src="libs/jquery-1.12.4.min.js"></script>
+    <script>
+      $(function () {
+        // for (var i = 0; i < 5; i++) {
+        //   $(".banner li")
+        //     .eq(i)
+        //     .css({ left: i * 600 });
+        // }
+
+        $(".banner li").each(function (num) {
+          $(this).css({ left: num * 600 });
+        });
+
+        setInterval(slider, 3000);
+
+        function slider() {
+          $(".banner li")
+            .stop()
+            .animate({ left: "-=600px" }, 1000, function () {
+              var pos = $(this).position().left;
+              console.log(pos);
+              if (pos <= -2400) {
+                $(this).css({ left: "600px" });
+              }
+            });
+        }
+        //
+      });
+    </script>
+  </head>
+  <body>
+    <div class="banner">
+      <ul>
+        <li>
+          <a href="#"><img src="img/swan/slide01.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/swan/slide02.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/swan/slide03.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/swan/slide04.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/swan/slide05.png" alt="" /></a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

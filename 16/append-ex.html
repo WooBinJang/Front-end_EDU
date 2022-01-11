@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      .list {
+        width: 800px;
+        height: 600px;
+        border: 5px solid #000;
+      }
+      .box {
+        width: 500px;
+        height: 200px;
+        background: red;
+      }
+      .inner {
+        width: 600px;
+        height: 100px;
+        border: 10px solid blue;
+      }
+    </style>
+    <script src="libs/jquery-1.12.4.min.js"></script>
+  </head>
+  <body>
+    <ul class="list">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </ul>
+    <div class="inner">hello</div>
+    <div class="inner">world</div>
+    <div class="title1">제목2</div>
+    <script>
+      $(".list").append("<div class='box'></div>");
+      $(".list").prepend("<div class='box'></div>");
+      $("<p>새로운 요소추가</p>").prependTo(".inner");
+      $(".list").after("<div class='box'></div>");
+      $(".list").before("<div class='box'></div>");
+      //   $(".list").empty();
+      $(".list").remove();
+    </script>
+  </body>
+</html>

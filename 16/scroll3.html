@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        @import url(css/reset.css);
+        html,body{height: 100%;}
+        .logo{background: url(img/scroll/logo.png) no-repeat;width: 100px;height: 110px;text-indent: -9999px;margin: 20px;position: fixed;left:0;top:0}
+        
+        .gnb{background: rgba(0,0,0,.85);position: fixed;top:0;left: 0;right: 0;margin: 30px auto;width: 500px;border-radius: 40px;}
+        .gnb li{float: left}
+        .gnb li a{display: block;width: 100px;height: 50px;line-height: 50px;color:#999;font-size: 20px;text-align: center;font-weight: bold}
+        .gnb li a:hover{color:#ddd}
+    
+        .section{height: 100%;}
+        .box1{background-color: #764836}
+        .box2{background-color: #81af13}
+        .box3{background-color: #f46200}
+        .box4{background-color: #bb2c33}
+        .box5{background-color: #cc9384}
+    </style>
+    <script src="libs/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+            $('.gnb li').click(function(){
+                //li클릭시 스크롤 
+                var index=$(this).index();
+                var pos=$('.section').eq(index).position().top;
+                $('html,body').animate({scrollTop:pos});
+                //li클릭시 색상적용
+                var nowColor=$('.section').eq(index).css('background-color');
+                $(this).children('a').css({color:nowColor})
+                $(this).siblings().children('a').css({color:'#999'})
+            })
+        })//jQ
+    </script>
+</head>
+<body>
+ <h1 class="logo">toy</h1>
+ <ul class="gnb">
+     <li><a href="#">ONE</a></li>
+     <li><a href="#">TWO</a></li>
+     <li><a href="#">THREE</a></li>
+     <li><a href="#">FOUR</a></li>
+     <li><a href="#">FIVE</a></li>
+ </ul>  
+ <div class="section box1"></div>
+ <div class="section box2"></div>
+ <div class="section box3"></div>
+ <div class="section box4"></div>
+ <div class="section box5"></div>
+</body>
+</html>

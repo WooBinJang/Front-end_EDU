@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      @import url(css/reset.css);
+      #outer {
+        width: 400px;
+        height: 400px;
+        background: #f00;
+        position: relative;
+        margin: 100px auto;
+      }
+      #inner {
+        width: 200px;
+        height: 200px;
+        background: #000;
+        position: absolute;
+        top: 50px;
+        left: 100px;
+      }
+    </style>
+    <script src="libs/jquery-1.12.4.min.js"></script>
+    <script>
+      $(function () {
+        var pos = $("#inner").position().left;
+        var pos2 = $("#inner").offset().left;
+        console.log(pos);
+        console.log(pos2);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="outer">
+      <div id="inner"></div>
+    </div>
+  </body>
+</html>

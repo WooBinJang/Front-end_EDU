@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/scroll5.css" rel="stylesheet">
+    <script src="libs/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+            $(window).scroll(function(){
+                var nowScroll=$(window).scrollTop();//현재스크롤 위치 
+                for(var i=0;i<=4;i++){
+                   var start=$('.section').eq(i).position().top; //각 섹션의 시작위치 
+                   var end=start+$('.section').eq(i).height(); //각 섹션의 끝 위치
+                   console.log(nowScroll+"\n"+start+"\n"+end);
+                    if(nowScroll>=start && nowScroll<end){
+                        var nowColor=$('.section').eq(i).css('background-color');//#1
+                        $('.gnb li').eq(i).children('a').css({color:nowColor});//#2
+                        $('.gnb li').eq(i).siblings().children('a').css({color:'#999'});//#3
+                        $('.section').eq(i).children('img').addClass('up');//#4
+                        $('.section').eq(i).siblings().children('img').removeClass('up');//#5 
+                    }//if종료
+                    
+                }//for문 종료
+            })//스크롤
+        })//jQ
+        /*
+        #1 해당섹션의 배경색 변수에 저장 
+        #2 같은 인덱스 번호의 li의 a에 색적용 
+        #3 나머지 li의 a는 원래 색으로 
+        #4 해당섹션에 이미지에 만들어진 클래스 적용
+        #5 나머지 섹션이미지에 클래스 삭제
+        */
+    </script>
+</head>
+<body>
+  <h1 class="logo">toy</h1>
+  <ul class="gnb">
+	<li><a href="#">ONE</a></li>
+	<li><a href="#">TWO</a></li>
+	<li><a href="#">THREE</a></li>
+	<li><a href="#">FOUR</a></li>
+	<li><a href="#">FIVE</a></li>
+  </ul>
+  <div class="section one">
+	<img src="img/scroll/toy01.png">
+  </div>
+   <div class="section two">
+	<img src="img/scroll/toy06.png" class="a01">
+	<img src="img/scroll/toy06.png" class="a02">
+	<img src="img/scroll/toy06.png" class="a03">
+  </div>
+   <div class="section three">
+	<img src="img/scroll/toy03.png">
+  </div>
+   <div class="section four">
+	<img src="img/scroll/toy04.png">
+  </div>
+   <div class="section five">
+	<img src="img/scroll/toy05.png">
+  </div>
+</body>
+</html>
+
+
+
+

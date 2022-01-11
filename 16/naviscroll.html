@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      @import url(css/reset.css);
+      html,
+      body {
+        height: 100%;
+      }
+      .section {
+        height: 100%;
+        position: relative;
+      }
+      .section h1 {
+        position: absolute;
+        font-size: 150px;
+        color: #fff;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+      }
+      #section1 {
+        background: #81c496;
+      }
+      #section2 {
+        background: #cc6945;
+      }
+      #section3 {
+        background: #d41257;
+      }
+      #section4 {
+        background: #053578;
+      }
+
+      #navi {
+        position: absolute;
+        right: 0;
+        width: 160px;
+        background: #fff;
+        z-index: 1000;
+      }
+      #navi li a {
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        padding: 8px 0;
+      }
+
+      #navi li:nth-child(1) a.on {
+        background: #81c496;
+        color: #fff;
+      }
+      #navi li:nth-child(2) a.on {
+        background: #cc6945;
+        color: #fff;
+      }
+      #navi li:nth-child(3) a.on {
+        background: #d41257;
+        color: #fff;
+      }
+      #navi li:nth-child(4) a.on {
+        background: #053578;
+        color: #fff;
+      }
+    </style>
+    <script src="libs/jquery-1.12.4.min.js"></script>
+    <script>
+      $(function () {
+        var $mid = $(window).height() / 2 - $("#navi").height() / 2;
+        // 네비 중앙 높이
+        $("#navi").css({ top: $mid });
+        $(window).on("scroll", function () {
+          var nowScroll = $("html,body").scrollTop();
+          // 현재 높이
+          $("#navi")
+            .stop()
+            .animate({ top: nowScroll + $mid }, 100);
+        });
+
+        //navi li 클릭시
+        $("#navi li").on("click", function () {
+          $(this).children("a").addClass("on");
+          $(this).siblings().children("a").removeClass("on");
+          var index = $(this).index();
+
+          var pos = $(".section").eq(index).position().top;
+          $("html,body").animate({ scrollTop: pos });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <ul id="navi">
+      <li><a href="#">section1</a></li>
+      <li><a href="#">section2</a></li>
+      <li><a href="#">section3</a></li>
+      <li><a href="#">section4</a></li>
+    </ul>
+    <div class="section" id="section1"><h1>section1</h1></div>
+    <div class="section" id="section2"><h1>section2</h1></div>
+    <div class="section" id="section3"><h1>section3</h1></div>
+    <div class="section" id="section4"><h1>section4</h1></div>
+  </body>
+</html>

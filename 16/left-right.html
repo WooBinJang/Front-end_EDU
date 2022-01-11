@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      @import url(css/reset.css);
+      body {
+        background: #666;
+      }
+      #wrapper {
+        width: 600px;
+        height: 350px;
+        margin: 120px auto;
+        position: relative;
+        border: 10px solid #f00;
+        overflow: hidden;
+      }
+      #slider li {
+        position: absolute;
+        top: 0;
+        left: -600px;
+      }
+      #slider li:nth-child(1) {
+        left: 0;
+      }
+
+      #slider-nav {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -50px;
+        width: 100px;
+        z-index: 500;
+      }
+      #slider-nav a {
+        display: block;
+        text-indent: -9999px;
+        width: 50px;
+        height: 50px;
+        background: url(img/swan/arr.png) no-repeat;
+        float: left;
+      }
+      #slider-nav a#next {
+        background-position: right;
+      }
+    </style>
+    <script src="libs/jquery-1.12.4.min.js"></script>
+
+    <script></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="slider-nav">
+        <a href="#" id="prev">prev</a>
+        <a href="#" id="next">next</a>
+      </div>
+      <ul id="slider">
+        <li>
+          <a href="#"><img src="img/swan/slide01.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/swan/slide02.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/swan/slide03.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/swan/slide04.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/swan/slide05.png" alt="" /></a>
+        </li>
+      </ul>
+    </div>
+    <script>
+      var currnet = 0;
+      $("#prev,#next").on("click", slide);
+
+      function slide() {
+        var btn = $(this).attr("id");
+        if (btn === "prev") {
+          currnet--;
+        } else if (btn === "next") {
+          currnet++;
+        }
+        if (currnet > 4) {
+          currnet = 0;
+        } else if (currnet < 0) {
+          currnet = 4;
+        }
+        if (btn === "next") {
+          $("#slider li")
+            .eq(currnet)
+            .css({ left: "-600px" })
+            .stop()
+            .animate({ left: 0 });
+          $("#slider li")
+            .eq(currnet)
+            .siblings()
+            .stop()
+            .animate({ left: "600px" });
+        } else if (btn === "prev") {
+          $("#slider li")
+            .eq(currnet)
+            .css({ left: "600px" })
+            .stop()
+            .animate({ left: 0 });
+          $("#slider li")
+            .eq(currnet)
+            .siblings()
+            .stop()
+            .animate({ left: "-600px" });
+        }
+      }
+    </script>
+  </body>
+</html>
