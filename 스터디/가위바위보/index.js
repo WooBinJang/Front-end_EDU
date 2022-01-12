@@ -1,5 +1,5 @@
-var user_score = 1;
-var com_score = 1;
+var user_score = 0;
+var com_score = 0;
 var current = 0;
 var answer = "";
 var interval = setInterval(function () {
@@ -24,12 +24,12 @@ $("#rock").on("click", function () {
 
   if (answer === "가위") {
     alert("이겼다.");
-    $(".user-count .count-score").text(`${user_score++} 점`);
+    $(".user-count .count-score").text(`${++user_score} 점`);
   } else if (answer === "바위") {
     alert("비겼다.");
   } else if (answer === "보") {
     alert("졌다..");
-    $(".gamer-count .count-score").text(`${com_score++} 점`);
+    $(".gamer-count .count-score").text(`${++com_score} 점`);
   }
 });
 
@@ -46,10 +46,10 @@ $("#paper").on("click", function () {
 
   if (answer === "가위") {
     alert("졌다.");
-    $(".gamer-count .count-score").text(`${com_score++} 점`);
+    $(".gamer-count .count-score").text(`${++com_score} 점`);
   } else if (answer === "바위") {
     alert("이겼다.");
-    $(".user-count .count-score").text(`${user_score++} 점`);
+    $(".user-count .count-score").text(`${++user_score} 점`);
   } else if (answer === "보") {
     alert("비겼다..");
   }
@@ -70,16 +70,16 @@ $("#scissors").on("click", function () {
     alert("비겼다.");
   } else if (answer === "바위") {
     alert("졌다.");
-    $(".gamer-count .count-score").text(`${com_score++} 점`);
+    $(".gamer-count .count-score").text(`${++com_score} 점`);
   } else if (answer === "보") {
     alert("이겼다..");
-    $(".user-count .count-score").text(`${user_score++} 점`);
+    $(".user-count .count-score").text(`${++user_score} 점`);
   }
 });
 
 $("#reset").on("click", function () {
   $(".user-count .count-score").text("0 점");
   $(".gamer-count .count-score").text("0 점");
-  user_score = 1;
-  com_score = 1;
+  user_score = 0;
+  com_score = 0;
 });
