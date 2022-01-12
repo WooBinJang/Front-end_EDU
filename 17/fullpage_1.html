@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script src="libs/jquery-1.12.4.min.js"></script>
+    <script src="libs/fullpage/fullpage.min.js"></script>
+    <link rel="stylesheet" href="libs/fullpage/fullpage.min.css" />
+    <style>
+      @import url(css/reset.css);
+      .section {
+        background-size: cover;
+        background-position: center top;
+      }
+      .s1 {
+        background-image: url(img/nb/slide01.png);
+      }
+      .s2 {
+        background-image: url(img/nb/slide02.png);
+      }
+      .s3 {
+        background-image: url(img/nb/slide03.png);
+      }
+      .s4 {
+        background-image: url(img/nb/slide04.png);
+      }
+      .s5 {
+        background-image: url(img/nb/slide05.png);
+      }
+      .s6 {
+        background-image: url(img/nb/slide06.png);
+      }
+      #menuBar {
+        position: fixed;
+        z-index: 1000;
+        left: 100px;
+        bottom: 150px;
+      }
+      #menuBar .gnb li {
+        height: 60px;
+        overflow: hidden;
+      }
+      #menuBar .gnb li a {
+        display: block;
+        position: relative;
+        height: 60px;
+        line-height: 60px;
+        font-size: 40px;
+        opacity: 0.5;
+        font-family: "arial";
+        color: #ccc;
+      }
+
+      #menuBar .gnb li.active a {
+        opacity: 1;
+        font-weight: bold;
+      }
+    </style>
+    <script>
+      $(function () {
+        $("#fullpage").fullpage({
+          licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
+          anchors: [
+            "section0",
+            "section1",
+            "section2",
+            "section3",
+            "section4",
+            "section5",
+          ],
+          menu: ".gnb",
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="menuBar">
+      <ul class="gnb">
+        <li data-menuanchor="section0"><a href="#section0">Section1</a></li>
+        <li data-menuanchor="section1"><a href="#section1">Section2</a></li>
+        <li data-menuanchor="section2"><a href="#section2">Section3</a></li>
+        <li data-menuanchor="section3"><a href="#section3">Section4</a></li>
+        <li data-menuanchor="section4"><a href="#section4">Section5</a></li>
+        <li data-menuanchor="section5"><a href="#section5">Section6</a></li>
+      </ul>
+    </div>
+    <div id="fullpage">
+      <div class="section s1"></div>
+      <div class="section s2"></div>
+      <div class="section s3"></div>
+      <div class="section s4"></div>
+      <div class="section s5"></div>
+      <div class="section s6"></div>
+    </div>
+  </body>
+</html>

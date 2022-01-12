@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script src="libs/jquery-1.12.4.min.js"></script>
+    <style>
+      .face {
+        width: 290px;
+        height: 290px;
+        background: url(img/eventimg/face.png) no-repeat;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -145px;
+        margin-top: -145px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="face"></div>
+    <script>
+      $(window).on("keydown", function (e) {
+        console.log(e.keyCode);
+
+        if (e.keyCode === 37) {
+          console.log("asddas");
+          $(".face").stop().animate({ left: "-=3%" });
+        } else if (e.keyCode === 39) {
+          $(".face").stop().animate({ left: "+=3%" });
+        } else if (e.keyCode === 38) {
+          $(".face").stop().animate({ top: "-=3%" });
+        } else if (e.keyCode === 40) {
+          $(".face").stop().animate({ top: "+=3%" });
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+body{font-family: 'Noto Sans KR', sans-serif;}
+
+.wrapper{width: 100%;min-width: 1440px;}
+
+header{height: 110px;border-bottom: 1px solid #857668;position: relative}
+.logo{float: left;margin-top: 30px;margin-left: 20px}
+.logo a{display: block;background: url(../img/lotte/logo.png) no-repeat;width:240px ;height:44px ; text-indent: -9999px}
+
+.util{float: right;margin-top: 45px}
+.util li{float: left;font-size: 16px;margin-right: 24px}
+.util li:first-child{margin-right: 48px}
+.util li:first-child a{text-indent: -9999px;background: url(../img/lotte/btn_top_search.png) no-repeat;width: 24px;height: 25px;}
+.util li a{display: block;height: 30px;line-height: 30px;color:#666}
+
+nav{position: absolute;left:50%;transform: translateX(-50%);width: 866px;z-index: 2000}
+.dep1{margin-top: 48px;position: relative;}
+.dep1>li{float: left;margin-right: 96px;height: 62px}
+.dep1>li:last-child{margin-right: 0;}
+.dep1>li>a{font-size: 22px;color:#333;display: block;height: 62px;position: relative;}
+.dep1>li>a::after{content: '';height: 2px;background: #a63232;width: 0;display: block;top:60px;left:50%;transform: translateX(-50%);position: absolute;transition: all 0.25s}
+.dep1>li:hover>a::after{width: 50px}
+
+.dep1>li:hover>a{color:#a63232}
+.dep2{position: absolute;left:0;top:62px;padding-top:30px;display: none;}
+/*.dep1>li:first-child>.dep2{display: block}*/
+.dep2>li{float: left;line-height: 44px;height: 40px;margin-right: 72px}
+.dep2>li>a{font-size: 18px;color:#555;}
+.dep2>li>a:hover{color:#857668}
+.dep2>li.title>a{color:#a63232;font-size: 20px;position: relative}
+.dep2>li.title>a::after{content: '';background: url(../img/lotte/arrow.png) no-repeat;position: absolute;right: -28px;top:8px;width:14px;height: 15px;display: block }
+.nav_bg{position: absolute;left:0;top:111px;width: 100%; height: 140px;background: #fff;z-index: 1000;display: none}
+
+/*검색영역*/
+
+
+.search_area{width: 1270px;height: 70px;position: absolute;top:150px;left:50%;transform: translateX(-50%);z-index:3000;display: none}
+
+.search_box{width: 1120px;height: 70px;border-radius: 35px;background: #fff;border:1px solid #857668;padding:0 60px 0 40px;box-sizing: border-box;position: relative}
+
+.search_box input{width: 1000px;height: 66px;border: none;outline-color: #857668 ;font-size: 17px}
+.search_box .search_btn{position: absolute;display: block;background: url(../img/lotte/btn_search.png) no-repeat;width: 24px;height: 25px;top:22px;right:30px;text-indent: -9999px; }
+
+.search_close_btn{display: block;background: url(../img/lotte/closoe_x.png) no-repeat;width: 22px;height: 27px;position: absolute;right: 16px;top:21px;text-indent: -9999px;font-size: 0}
+
+
+/*로그인*/
+.login_area_bg{position: fixed;left:0;top:0;width: 100%;height: 100%;background: rgba(0,0,0,.7);z-index: 5000;display: none}
+
+.login_box{width: 630px;height: 470px;background: #fff;position: absolute;left:0;right: 0;top:0;bottom:0;margin: auto;}
+.login_box>h3{font-size: 32px;color:#333;text-align: center;margin-top:48px;font-weight: 400; }
+.login_box>p{font-size: 16px;color:#555;text-align: center;margin-top: 32px;}
+.login_box form p{margin-top:24px;text-align: center}
+.login_box form label{width: 72px;height: 48px;font-size: 18px;color:#333;line-height: 48px;display: inline-block;text-align: left}
+.login_box form input[type="text"]{height: 48px;width:380px;border:1px solid #857668 }
+.login_box form input[type="password"]{height: 48px;width:380px;border:1px solid #857668 }
+
+.login_box form input[type="submit"]{width: 452px;height: 56px;text-align: center;color:#fff;background:#857668;line-height: 56px;font-size: 20px;border:none;border-radius: 28px }
+.login_info_search{text-align: center;}
+
+.login_info_search a{display: inline-block;margin:0 24px;color:#555;font-size: 18px;position: relative}
+
+.login_info_search a::after{content: '';position: absolute;right:-24px;width: 1px;height:16px;top:4px;background-color: #555 }
+.login_info_search a:last-child::after{display: none}
+
+.login_close_btn{position: absolute;right: 24px;top:24px;background: url(../img/lotte/close_login_x.png) no-repeat;text-indent: -9999px;font-size: 0;width:50px;height: 50px }
+
+
+
+
+
+
+

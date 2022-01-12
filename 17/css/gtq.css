@@ -1,0 +1,27 @@
+@import url(reset.css);
+
+/*이미지 슬라이드 부분*/
+.slider_box{width: 100%;background: #eff0f3;}
+.slider_box .slider{width: 980px;margin: auto;border-left:2px solid #fff;border-right: 2px solid #fff;position: relative}
+
+.slider_box .slider .btn_pager{position: absolute;right: 0;top:0}
+.slider_box .slider .btn_pager ul{width: 204px;}
+.slider_box .slider .btn_pager ul li{float: left;width: 50%;}
+.slider_box .slider .btn_pager ul li a{display: block;height: 76px;border-left:1px solid #fff;border-bottom:1px solid #fff;background:#d8dae2 no-repeat 0 -75px;text-indent: -9999px;box-sizing: border-box; }
+
+.slider_box .slider .btn_pager ul li:nth-child(7) a{border-bottom-color:transparent}
+.slider_box .slider .btn_pager ul li:nth-child(8) a{border-bottom-color:transparent}
+
+
+.slider_box .slider .btn_pager ul li:nth-child(1) a{background-image: url(../img/tab1.png)}
+.slider_box .slider .btn_pager ul li:nth-child(2) a{background-image: url(../img/tab2.png)}
+.slider_box .slider .btn_pager ul li:nth-child(3) a{background-image: url(../img/tab3.png)}
+.slider_box .slider .btn_pager ul li:nth-child(4) a{background-image: url(../img/tab4.png)}
+.slider_box .slider .btn_pager ul li:nth-child(5) a{background-image: url(../img/tab5.png)}
+.slider_box .slider .btn_pager ul li:nth-child(6) a{background-image: url(../img/tab6.png)}
+.slider_box .slider .btn_pager ul li:nth-child(7) a{background-image: url(../img/tab7.png)}
+.slider_box .slider .btn_pager ul li:nth-child(8) a{background-image: url(../img/tab8.png)}
+
+.slider_wrapper{width: 776px}
+
+

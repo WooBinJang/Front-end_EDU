@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script src="libs/jquery-1.12.4.min.js"></script>
+  </head>
+  <body>
+    <div id="box"></div>
+    <script>
+      $(document).on("mousemove", function (e) {
+        var mouseX = e.pageX;
+        var mouseY = e.pageY;
+        //객체.속성 -> 이벤트객체.마우스좌표속성
+        $("#box").text("마우스 X 좌표 " + mouseX + "마우스 Y 좌표 " + mouseY);
+        var winWidth = $(window).width() / 2;
+        if (mouseX < winWidth) {
+          $("body").css({ backgroundColor: "red" });
+        } else if (mouseX >= winWidth) {
+          $("body").css({ backgroundColor: "blue" });
+        }
+      });
+    </script>
+  </body>
+</html>

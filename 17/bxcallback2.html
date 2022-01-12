@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script src="libs/jquery-1.12.4.min.js"></script>
+    <script src="./libs/bxSlider/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="./libs/bxSlider/jquery.bxslider.min.css" />
+    <style>
+      @import url(css/reset.css);
+      #contents {
+        width: 960px;
+        margin: 50px auto;
+        position: relative;
+      }
+      .slider li {
+        position: relative;
+        overflow: hidden;
+      }
+      .slider li .sub {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .slider li .sub img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: 50px auto;
+        width: 240px;
+      }
+      .slider li .sub p {
+        position: relative;
+        width: 600px;
+        left: 0;
+        right: 0;
+        top: 150px;
+        margin: auto;
+        color: #ccc;
+        line-height: 1.5;
+        font-family: "arial";
+        font-size: 17px;
+        font-weight: bold;
+        text-align: center;
+        margin: auto;
+      }
+      .pager {
+        position: absolute;
+        left: 50%;
+        bottom: 20px;
+        transform: translateX(-50%);
+      }
+      .pager a {
+        cursor: pointer;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+      }
+      .pager a img {
+        border: 3px solid white;
+        border-radius: 50%;
+      }
+      .control_area span {
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 55px;
+        height: 105px;
+        font-size: 0;
+      }
+      .control_area .nextBtn {
+        background: url(/img/next.png) no-repeat;
+        right: 50px;
+      }
+      .control_area .prevBtn {
+        background: url(/img/prev.png) no-repeat;
+        left: 50px;
+      }
+      .control_area span a {
+        display: block;
+        width: 55px;
+        height: 105px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="contents">
+      <ul class="slider">
+        <li>
+          <img src="img/can/slide01.png" />
+          <div class="sub">
+            <img src="img/can/title01.png" class="title" />
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s
+            </p>
+          </div>
+        </li>
+        <li>
+          <img src="img/can/slide02.png" />
+          <div class="sub">
+            <img src="img/can/title02.png" class="title" />
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s
+            </p>
+          </div>
+        </li>
+        <li>
+          <img src="img/can/slide03.png" />
+          <div class="sub">
+            <img src="img/can/title03.png" class="title" />
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s
+            </p>
+          </div>
+        </li>
+        <li>
+          <img src="img/can/slide04.png" />
+          <div class="sub">
+            <img src="img/can/title04.png" class="title" />
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s
+            </p>
+          </div>
+        </li>
+        <li>
+          <img src="img/can/slide05.png" />
+          <div class="sub">
+            <img src="img/can/title05.png" class="title" />
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s
+            </p>
+          </div>
+        </li>
+      </ul>
+      <div class="pager">
+        <a href="#" data-slide-index="0"
+          ><img src="./img/can/thumb01.png" alt=""
+        /></a>
+        <a href="#" data-slide-index="1"
+          ><img src="./img/can/thumb02.png" alt=""
+        /></a>
+        <a href="#" data-slide-index="2"
+          ><img src="./img/can/thumb03.png" alt=""
+        /></a>
+        <a href="#" data-slide-index="3"
+          ><img src="./img/can/thumb04.png" alt=""
+        /></a>
+        <a href="#" data-slide-index="4"
+          ><img src="./img/can/thumb05.png" alt=""
+        /></a>
+      </div>
+      <div class="control_area">
+        <span class="prevBtn">이전</span>
+        <span class="nextBtn">다음</span>
+      </div>
+    </div>
+    <script>
+      $(".slider").bxSlider({
+        //슬라이드 직전의 콜백
+        onSlideBefore: function ($slideElement, oldIndex, newIndex) {
+          $slideElement.children(".sub").children("img").css({ top: "500px" });
+          $slideElement
+            .children(".sub")
+            .children("p")
+            .delay(200)
+            .css({ top: "500px" });
+        },
+
+        onSlideAfter: function ($slideElement, oldIndex, newIndex) {
+          $slideElement
+            .children(".sub")
+            .children("img")
+            .delay(100)
+            .animate({ top: "40px" });
+          $slideElement
+            .children(".sub")
+            .children("p")
+            .delay(200)
+            .animate({ top: "220px" });
+        },
+        pagerCustom: ".pager",
+        nextSelector: ".prevBtn",
+        prevSelector: ".nextBtn",
+        auto: true,
+        stopAutoOnClick: "true",
+        speed: 600,
+        pause: 3000,
+      });
+    </script>
+  </body>
+</html>

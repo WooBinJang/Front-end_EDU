@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script src="libs/jquery-1.12.4.min.js"></script>
+    <!--풀페이지 플러그인 연결-->
+    <script src="libs/fullpage/fullpage.min.js"></script>
+    <link rel="stylesheet" href="libs/fullpage/fullpage.min.css" />
+    <!--custom-->
+    <link rel="stylesheet" href="css/fullpage_2.css" />
+    <script>
+      $(function () {
+        $("#fullpage").fullpage({
+          licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
+          menu: ".gnb",
+          anchors: ["page1", "page2", "page3"],
+          afterLoad: function (origin, destination, direction) {
+            //using index
+            if (destination.index == 2) {
+              $(".product li").each(function (i) {
+                $(".product li")
+                  .eq(i)
+                  .delay(150 * i)
+                  .animate({ top: 0, opacity: 1 });
+              });
+            } else {
+              $(".product li").animate({ top: "60px", opacity: "0" });
+            }
+          },
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="header">
+      <ul class="gnb">
+        <li data-menuanchor="page1"><a href="#page1">Menu1</a></li>
+        <li data-menuanchor="page2"><a href="#page2">Menu2</a></li>
+        <li data-menuanchor="page3"><a href="#page3">Menu3</a></li>
+      </ul>
+    </div>
+    <!--//상단고정메뉴-->
+
+    <div id="fullpage">
+      <div class="section section1">
+        <h1><img src="img/samsonite/logo.png" alt="로고" /></h1>
+      </div>
+      <!--//섹션1-->
+      <div class="section section2">
+        <div class="slide slide1"></div>
+        <div class="slide slide2"></div>
+        <div class="slide slide3"></div>
+      </div>
+      <!--//섹션2-->
+      <div class="section section3">
+        <h2>Title</h2>
+        <ul class="product clearfix">
+          <li>
+            <img src="img/list/icon01.png" alt="" />
+            <h3>product1</h3>
+            <p>342.530</p>
+          </li>
+          <li>
+            <img src="img/list/icon02.png" alt="" />
+            <h3>product2</h3>
+            <p>342.530</p>
+          </li>
+          <li>
+            <img src="img/list/icon03.png" alt="" />
+            <h3>product3</h3>
+            <p>342.530</p>
+          </li>
+          <li>
+            <img src="img/list/icon04.png" alt="" />
+            <h3>product4</h3>
+            <p>342.530</p>
+          </li>
+          <li>
+            <img src="img/list/icon05.png" alt="" />
+            <h3>product5</h3>
+            <p>342.530</p>
+          </li>
+        </ul>
+      </div>
+      <!--//섹션3-->
+    </div>
+  </body>
+</html>

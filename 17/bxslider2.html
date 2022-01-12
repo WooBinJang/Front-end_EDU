@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script src="libs/jquery-1.12.4.min.js"></script>
+    <script src="./libs/bxSlider/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="./libs/bxSlider/jquery.bxslider.min.css" />
+    <style>
+      #wrapper {
+        width: 960px;
+        margin: auto;
+        position: relative;
+      }
+      .pager {
+        position: absolute;
+        left: 50%;
+        bottom: 20px;
+        transform: translateX(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <ul class="imgslider">
+        <li><img src="img/can/slide01.png" alt="" /></li>
+        <li><img src="img/can/slide02.png" alt="" /></li>
+        <li><img src="img/can/slide03.png" alt="" /></li>
+        <li><img src="img/can/slide04.png" alt="" /></li>
+        <li><img src="img/can/slide05.png" alt="" /></li>
+      </ul>
+      <div class="pager">
+        <a href="#" data-slide-index="0"
+          ><img src="./img/can/thumb01.png" alt=""
+        /></a>
+        <a href="#" data-slide-index="1"
+          ><img src="./img/can/thumb02.png" alt=""
+        /></a>
+        <a href="#" data-slide-index="2"
+          ><img src="./img/can/thumb03.png" alt=""
+        /></a>
+        <a href="#" data-slide-index="3"
+          ><img src="./img/can/thumb04.png" alt=""
+        /></a>
+        <a href="#" data-slide-index="4"
+          ><img src="./img/can/thumb05.png" alt=""
+        /></a>
+      </div>
+    </div>
+
+    <script>
+      $(".imgslider").bxSlider({
+        pagerCustom: ".pager",
+      });
+    </script>
+  </body>
+</html>

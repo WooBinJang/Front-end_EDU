@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script src="libs/jquery-1.12.4.min.js"></script>
+    <script src="libs/bxSlider/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="./libs/bxSlider/jquery.bxslider.min.css" />
+
+    <style>
+      /* 
+        .bx-wrapper .bx-pager.bx-default-pager a {
+          width: 30px;
+          background-color: red;
+        }
+
+        .bx-wrapper .bx-controls-auto,
+        .bx-wrapper .bx-pager {
+          bottom: 30px;
+        }
+    
+        .bx-wrapper .bx-pager.bx-default-pager a.active {
+          background-color: green;
+        }
+
+       
+         */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .bx-wrapper {
+        box-shadow: none;
+        border: none;
+        background: none;
+      }
+      #imgwrap {
+        width: 960px;
+        margin: 50px auto;
+      }
+      .pager-box a {
+        display: inline-block;
+        text-indent: -9999px;
+        width: 14px;
+        height: 14px;
+        border-radius: 7px;
+        margin: 0 3px;
+        background-color: #e0e0e0;
+      }
+      .pager-box a.active {
+        width: 40px;
+        background-color: #909090;
+      }
+    </style>
+
+    <script>
+      $(function () {
+        $(document).ready(function () {
+          $(".imgslider").bxSlider({
+            auto: "true",
+            pause: "2500",
+            pagerCustom: ".pager-box",
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="imgwrap">
+      <ul class="imgslider">
+        <li>
+          <a href="#"><img src="img/hero/slide01.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/hero/slide02.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/hero/slide03.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/hero/slide04.png" alt="" /></a>
+        </li>
+      </ul>
+    </div>
+    <div class="pager-box">
+      <a href="#" data-slide-index="0">이미지 배너1</a>
+      <a href="#" data-slide-index="1">이미지 배너2</a>
+      <a href="#" data-slide-index="2">이미지 배너3</a>
+      <a href="#" data-slide-index="3">이미지 배너4</a>
+    </div>
+  </body>
+</html>

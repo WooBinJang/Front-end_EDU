@@ -1,0 +1,55 @@
+@import url(./reset.css);
+
+.section {
+  text-align: center;
+}
+.section1 {
+  background-color: rgb(152, 97, 204);
+}
+.section2 {
+  background-color: rgb(51, 123, 172);
+}
+.section3 {
+  background-color: rgb(93, 196, 61);
+}
+
+.section2 .slide1 {
+  background-color: rgb(157, 229, 157);
+}
+.section2 .slide2 {
+  background-color: rgb(219, 145, 145);
+}
+.section2 .slide3 {
+  background-color: rgb(68, 68, 235);
+}
+
+.section3 .product {
+  display: flex;
+  justify-content: center;
+}
+.section3 .product li {
+  opacity: 0;
+  position: relative;
+  top: 60px;
+}
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 1000;
+  text-align: center;
+}
+#header .gnb li {
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  color: #fff;
+}
+
+#header .gnb li.active {
+  counter-reset: rgb(174, 215, 231);
+}
