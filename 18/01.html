@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    var a = new Date();
+    var a1 = a.getMonth();
+    var a2 = a.getDate();
+    var a3 = a.getDay();
+    var a4 = a.getHours();
+    var a5 = a.getMinutes();
+    var a6 = a.getSeconds();
+
+    var dayList = ["일", "월", "화", "수", "목", "금", "토"];
+    document.write(a1 + "/" + a2 + "/" + dayList[a3] + "요일");
+    document.write(a4 + "시 " + a5 + "분");
+  </script>
+</html>

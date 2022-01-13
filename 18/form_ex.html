@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#n1").on("blur", function () {
+          var value = $(this).val().toUpperCase();
+          $(this).val(value);
+        });
+
+        $("#n2").on("keyup", function () {
+          var value = $(this).val().toLowerCase();
+          $(this).val(value);
+        });
+
+        $("#n3").on("keyup", function () {
+          var len = $(this).val().length;
+          if (len > 4) {
+            alert("글자 초과");
+          }
+        });
+
+        $("#n4").on("click", function () {
+          $(this).select();
+        });
+
+        $("#m5").on("click", function () {
+          var value = $("#n5").val().substr(0, 3);
+          $(this).val(value);
+        });
+
+        $("#nbtn1").on("click", function () {
+          var value1 = $("#n6").val().toUpperCase();
+          $("#n6").val(value1);
+          var value2 = $("#m6").val().toUpperCase();
+          $("#m6").val(value1);
+        });
+
+        $("#nbtn2").on("click", function () {
+          var value1 = $("#n6").val().toLowerCase();
+          $("#n6").val(value1);
+          var value2 = $("#m6").val().toLowerCase();
+          $("#m6").val(value1);
+        });
+
+        $("#m7").on("click", function () {
+          var name = $("#n7").val();
+          if (name.length !== 0) {
+            alert(name);
+          } else {
+            alert("이름을 입력하세요");
+          }
+        });
+
+        $("#m8").on("click", function () {
+          var email = $("#n8").val();
+          var emailCheck = email.indexOf("@");
+          if (emailCheck !== -1) {
+            alert(email);
+          } else {
+            alert("이메일을 제대로 입력하세요");
+            $("#n8").val("");
+          }
+        });
+
+        $("#n9").on("keyup", function () {
+          var len = $(this).val().length;
+          if (len > 6) {
+            $("#m9").focus();
+          }
+        });
+
+        $("#btn10").on("click", function () {
+          var len1 = $("#n10").val().length;
+          var len2 = $("#m10").val().length;
+          if (len1 + len2 !== 13) {
+            alert("잘못된 입력입니다.");
+            $("#n10").val("").focus();
+            $("#m10").val("");
+          }
+        });
+
+        $("#btn11").on("click", function () {
+          var len1 = $("#n11").val().length;
+          var len2 = $("#m11").val().length;
+          var sex = $("#m11").val().charAt(0);
+
+          if (len1 + len2 !== 13) {
+            alert("잘못된 입력입니다.22");
+            $("#n11").val("").focus();
+            $("#m11").val("");
+          } else {
+            if (sex == 2 || sex == 4) {
+              alert("여성");
+            } else if (sex == 1 || sex == 3) {
+              alert("남성");
+            } else {
+              $("#n10").val("").focus();
+              $("#m10").val("");
+              alert("잘못된 입력입니다11");
+            }
+          }
+        });
+
+        $("#btn12").on("click", function () {
+          var pwd1 = $("#n12").val();
+          var pwd2 = $("#m12").val();
+          if (pwd1 !== pwd2) {
+            alert("비밀번호가 다릅니다");
+            $("#n12").val("").focus();
+            $("#m12").val("");
+          }
+        });
+
+        $("#btn13").on("click", function () {
+          var len = $("#n13").val().length;
+          if (len < 1) {
+            alert("한글자 이상 입력하시오");
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <form name="frm1">
+      <p>
+        1.소문자 - 대문자 변경<br />
+        <input type="text" name="n1" id="n1" />
+      </p>
+      <!-- onblur 포커스가 나갔을때-->
+      <p>
+        2.대문자-소문자 변경 <br />
+        <input type="text" name="n2" id="n2" />
+      </p>
+      <p>
+        3.5글자 초과 입력시 alert<br />
+        <input type="text" name="n3" id="n3" />
+      </p>
+      <p>
+        4.덱스트창에 내용을 입력후 텍스트 창 다시 클릭시 전체 블록선택<br />
+        <input type="text" name="n4" id="n4" />
+      </p>
+      <p>
+        5.텍스트 창에 입력후 다음 텍스트 창 클릭하면 앞글자 3글자 뒤에 텍스트에
+        복사<br />
+        <input type="text" name="n5" id="n5" />-<input
+          type="text"
+          name="m5"
+          id="m5"
+        />
+      </p>
+      <p>
+        6.text창이나 textarea 모든글자 를 대소문자로 변경<br />
+        <input type="text" name="n6" id="n6" />
+        <textarea name="m6" id="m6" cols="20" rows="3"></textarea>
+        <input type="button" value="대문자" id="nbtn1" />
+        <input type="button" value="소문자" id="nbtn2" />
+      </p>
+      <p>
+        7.이름을 입력하고 확인버튼 누르면 alert 창에 입력 받은 이름 출력 <br />
+        <input type="text" name="n7" id="n7" />
+        <input type="button" value="확인" name="m7" id="m7" />
+      </p>
+      <p>
+        8.메일 입력 후 @ 가 있는지 체크<br />
+        <input type="text" name="n8" id="n8" />
+        <input type="button" value="확인" id="m8" />
+      </p>
+      <p>
+        9.앞자리 6자리가 모두 입력되면 자동으로 다른 입력창으로 포커스 이동
+        <br />
+        <input type="text" name="n9" id="n9" />-<input
+          type="text"
+          name="m9"
+          id="m9"
+        />
+      </p>
+      <p>
+        10.주민번호 13자리인지 체크<br />
+        <input type="text" name="n10" id="n10" />-<input
+          type="text"
+          name="m10"
+          id="m10"
+        />
+        <input type="button" value="확인" id="btn10" />
+      </p>
+      <p>
+        11성별체크<br />
+        <input type="text" name="n11" id="n11" />-
+        <input type="text" name="m11" id="m11" />
+        <input type="button" value="확인" id="btn11" />
+      </p>
+      <p>
+        12비밀번호 일치<br />
+        <input type="password" name="n12" id="n12" /><br />
+        <input type="password" name="m12" id="m12" /><br />
+        <input type="button" value="확인" id="btn12" />
+      </p>
+      <p>
+        13.검색글자수 (한글자 이상 입력하세요) <br />
+        <input type="text" name="n13" id="n13" />
+        <input type="button" value="검색" id="btn13" />
+      </p>
+    </form>
+  </body>
+</html>
