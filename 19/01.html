@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   var student1 = { name: "Kim", age: 15 };
+      //   var student2 = {
+      //     name: "Park",
+      //     age: 15,
+      //     sayName: function () {
+      //       console.log("안녕하세요 " + this.name + " 입니다");
+      //     },
+      //   };
+      //   student2.sayName();
+
+      //생성자 contructor ( 부모 )
+
+      function Student(name, age) {
+        // 생성자 함수는 함수명 앞글자를 대문자로
+        this.name = name;
+        this.age = age;
+        this.sayName = function () {
+          console.log(
+            "안녕하세요 " + this.name + " 입니다. 나이는 " + this.age
+          );
+        };
+      }
+
+      var student1 = new Student("Lee", 11);
+      var student2 = new Student("Park", 12);
+      //   student1.sayName();
+      //   student2.sayName();
+
+      //inheritance
+      function Item(name, price) {
+        this.name = name;
+        this.price = price;
+        this.tax = function () {
+          console.log("세금 : " + this.price / 10);
+        };
+      }
+      var item1 = new Item("Tee", 50000);
+      var item2 = new Item("pants", 70000);
+      console.log(Item.prototype);
+      Item.prototype.size = "small";
+      console.log(item2.size);
+      item1.tax();
+      item2.tax();
+      var a = "a";
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function Student(name, age) {
+        this.name = name;
+        this.age = age;
+      }
+
+      function a() {
+        console.log("asd");
+      }
+      console.log(a.prototype);
+      console.log(Student.prototype);
+      var student1 = new Student("Lee", 20);
+      // console.log(student1.__proto__); // = Student.prototype
+      // console.log(Student.prototype); // = student1.__proto__
+    </script>
+  </body>
+</html>

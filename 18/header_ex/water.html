@@ -1,143 +1,155 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <link href="css/jq-water.css" rel="stylesheet" type="text/css">
-  <script src="libs/jquery-1.12.4.min.js"></script>
-
-</head>
-<body>
-<div class="wrapper">
-  <header>
-    <div class="inner">
-      <h1><a href="#">kwater</a></h1>
-      <div class="nav_area">
-        <div class="top_menu">
-          <ul>
-            <li><a href="#">ENGLISH</a></li>
-            <li class="btn_search"><a href="#">검색</a></li>
-          </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link href="css/jq-water.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="inner">
+          <h1><a href="#">kwater</a></h1>
+          <div class="nav_area">
+            <div class="top_menu">
+              <ul>
+                <li><a href="#">ENGLISH</a></li>
+                <li class="btn_search"><a href="#">검색</a></li>
+              </ul>
+            </div>
+            <!--//상단메뉴-->
+            <nav class="gnb">
+              <ul class="main">
+                <li>
+                  <a href="#">열린경영</a>
+                  <ul class="sub">
+                    <li><a href="#">경영공시</a></li>
+                    <li><a href="#">지속가능경영</a></li>
+                    <li><a href="#">윤리경영</a></li>
+                    <li><a href="#">사회적가치실현</a></li>
+                    <li><a href="#">일자리</a></li>
+                    <li><a href="#">국민참여예산</a></li>
+                    <li><a href="#">사회공헌</a></li>
+                    <li><a href="#">물이야기</a></li>
+                  </ul>
+                </li>
+                <!--//1-->
+                <li>
+                  <a href="#">안전.환경</a>
+                  <ul class="sub">
+                    <li><a href="#">경영공시</a></li>
+                    <li><a href="#">지속가능경영</a></li>
+                    <li><a href="#">윤리경영</a></li>
+                    <li><a href="#">사회적가치실현</a></li>
+                    <li><a href="#">일자리</a></li>
+                    <li><a href="#">국민참여예산</a></li>
+                    <li><a href="#">사회공헌</a></li>
+                    <li><a href="#">물이야기</a></li>
+                  </ul>
+                </li>
+                <!--//2-->
+                <li>
+                  <a href="#">정보공개</a>
+                  <ul class="sub">
+                    <li><a href="#">경영공시</a></li>
+                    <li><a href="#">지속가능경영</a></li>
+                    <li><a href="#">윤리경영</a></li>
+                    <li><a href="#">사회적가치실현</a></li>
+                    <li><a href="#">일자리</a></li>
+                    <li><a href="#">국민참여예산</a></li>
+                    <li><a href="#">사회공헌</a></li>
+                    <li><a href="#">물이야기</a></li>
+                  </ul>
+                </li>
+                <!--//3-->
+                <li>
+                  <a href="#">고객센터</a>
+                  <ul class="sub">
+                    <li><a href="#">경영공시</a></li>
+                    <li><a href="#">지속가능경영</a></li>
+                    <li><a href="#">윤리경영</a></li>
+                    <li><a href="#">사회적가치실현</a></li>
+                    <li><a href="#">일자리</a></li>
+                    <li><a href="#">국민참여예산</a></li>
+                    <li><a href="#">사회공헌</a></li>
+                    <li><a href="#">물이야기</a></li>
+                  </ul>
+                </li>
+                <!--//4-->
+                <li>
+                  <a href="#">새소식</a>
+                  <ul class="sub">
+                    <li><a href="#">경영공시</a></li>
+                    <li><a href="#">지속가능경영</a></li>
+                    <li><a href="#">윤리경영</a></li>
+                    <li><a href="#">사회적가치실현</a></li>
+                    <li><a href="#">일자리</a></li>
+                    <li><a href="#">국민참여예산</a></li>
+                    <li><a href="#">사회공헌</a></li>
+                    <li><a href="#">물이야기</a></li>
+                  </ul>
+                </li>
+                <!--//5-->
+                <li>
+                  <a href="#">대국민 서비스</a>
+                  <ul class="sub">
+                    <li><a href="#">경영공시</a></li>
+                    <li><a href="#">지속가능경영</a></li>
+                    <li><a href="#">윤리경영</a></li>
+                    <li><a href="#">사회적가치실현</a></li>
+                    <li><a href="#">일자리</a></li>
+                    <li><a href="#">국민참여예산</a></li>
+                    <li><a href="#">사회공헌</a></li>
+                    <li><a href="#">물이야기</a></li>
+                  </ul>
+                </li>
+                <!--//6-->
+                <li>
+                  <a href="#">기관소개</a>
+                  <ul class="sub">
+                    <li><a href="#">경영공시</a></li>
+                    <li><a href="#">지속가능경영</a></li>
+                    <li><a href="#">윤리경영</a></li>
+                    <li><a href="#">사회적가치실현</a></li>
+                    <li><a href="#">일자리</a></li>
+                    <li><a href="#">국민참여예산</a></li>
+                    <li><a href="#">사회공헌</a></li>
+                    <li><a href="#">물이야기</a></li>
+                  </ul>
+                </li>
+                <!--//7-->
+              </ul>
+              <!--//main-->
+            </nav>
+          </div>
+          <!--//네비영역-->
+          <div class="search_box">
+            <form>
+              <fieldset>
+                <legend>검색영역</legend>
+                <label for="search_field">검색</label>
+                <input
+                  type="text"
+                  placeholder="검색어를 입력하세요"
+                  id="search_field"
+                />
+                <input type="submit" value="검색" />
+                <a href="#" class="search_close_btn"
+                  ><img src="img/water/totalsearch_close.png" alt="닫기"
+                /></a>
+              </fieldset>
+            </form>
+          </div>
         </div>
-        <!--//상단메뉴-->
-        <nav class="gnb">
-          <ul class="main">
-            <li>
-              <a href="#">열린경영</a>
-              <ul class="sub">
-                <li><a href="#">경영공시</a></li>
-                <li><a href="#">지속가능경영</a></li>
-                <li><a href="#">윤리경영</a></li>
-                <li><a href="#">사회적가치실현</a></li>
-                <li><a href="#">일자리</a></li>
-                <li><a href="#">국민참여예산</a></li>
-                <li><a href="#">사회공헌</a></li>
-                <li><a href="#">물이야기</a></li>
-              </ul>
-            </li><!--//1-->
-            <li>
-              <a href="#">안전.환경</a>
-              <ul class="sub">
-                <li><a href="#">경영공시</a></li>
-                <li><a href="#">지속가능경영</a></li>
-                <li><a href="#">윤리경영</a></li>
-                <li><a href="#">사회적가치실현</a></li>
-                <li><a href="#">일자리</a></li>
-                <li><a href="#">국민참여예산</a></li>
-                <li><a href="#">사회공헌</a></li>
-                <li><a href="#">물이야기</a></li>
-              </ul>
-            </li><!--//2-->
-            <li>
-              <a href="#">정보공개</a>
-              <ul class="sub">
-                <li><a href="#">경영공시</a></li>
-                <li><a href="#">지속가능경영</a></li>
-                <li><a href="#">윤리경영</a></li>
-                <li><a href="#">사회적가치실현</a></li>
-                <li><a href="#">일자리</a></li>
-                <li><a href="#">국민참여예산</a></li>
-                <li><a href="#">사회공헌</a></li>
-                <li><a href="#">물이야기</a></li>
-              </ul>
-            </li><!--//3-->
-            <li>
-              <a href="#">고객센터</a>
-              <ul class="sub">
-                <li><a href="#">경영공시</a></li>
-                <li><a href="#">지속가능경영</a></li>
-                <li><a href="#">윤리경영</a></li>
-                <li><a href="#">사회적가치실현</a></li>
-                <li><a href="#">일자리</a></li>
-                <li><a href="#">국민참여예산</a></li>
-                <li><a href="#">사회공헌</a></li>
-                <li><a href="#">물이야기</a></li>
-              </ul>
-            </li><!--//4-->
-            <li>
-              <a href="#">새소식</a>
-              <ul class="sub">
-                <li><a href="#">경영공시</a></li>
-                <li><a href="#">지속가능경영</a></li>
-                <li><a href="#">윤리경영</a></li>
-                <li><a href="#">사회적가치실현</a></li>
-                <li><a href="#">일자리</a></li>
-                <li><a href="#">국민참여예산</a></li>
-                <li><a href="#">사회공헌</a></li>
-                <li><a href="#">물이야기</a></li>
-              </ul>
-            </li><!--//5-->
-            <li>
-              <a href="#">대국민 서비스</a>
-              <ul class="sub">
-                <li><a href="#">경영공시</a></li>
-                <li><a href="#">지속가능경영</a></li>
-                <li><a href="#">윤리경영</a></li>
-                <li><a href="#">사회적가치실현</a></li>
-                <li><a href="#">일자리</a></li>
-                <li><a href="#">국민참여예산</a></li>
-                <li><a href="#">사회공헌</a></li>
-                <li><a href="#">물이야기</a></li>
-              </ul>
-            </li><!--//6-->
-            <li>
-              <a href="#">기관소개</a>
-              <ul class="sub">
-                <li><a href="#">경영공시</a></li>
-                <li><a href="#">지속가능경영</a></li>
-                <li><a href="#">윤리경영</a></li>
-                <li><a href="#">사회적가치실현</a></li>
-                <li><a href="#">일자리</a></li>
-                <li><a href="#">국민참여예산</a></li>
-                <li><a href="#">사회공헌</a></li>
-                <li><a href="#">물이야기</a></li>
-              </ul>
-            </li><!--//7-->
-          </ul>
-        <!--//main-->
-      </nav>
-      </div>
-      <!--//네비영역-->
-      <div class="search_box">
-        <form>
-          <fieldset>
-            <legend>검색영역</legend>
-            <label for="search_field">검색</label>
-            <input type="text" placeholder="검색어를 입력하세요" id="search_field">
-            <input type="submit" value="검색">
-            <a href="#" class="search_close_btn"><img src="img/water/totalsearch_close.png" alt="닫기"></a>
-          </fieldset>
-        </form>
-      </div>
+        <!--//해더중앙-->
+        <div class="nav_all_bg"></div>
+      </header>
+      <!--//해더-->
+      <div class="mainvisual"></div>
+      <!--//메인이미지-->
     </div>
-    <!--//해더중앙-->
-    <div class="nav_all_bg"></div>
-  </header>
-  <!--//해더-->
-  <div class="mainvisual">
-    
-  </div>
-  <!--//메인이미지-->
-</div>
-</body>
+
+    <script src="libs/jquery-1.12.4.min.js"></script>
+    <script src="js/water.js"></script>
+  </body>
 </html>

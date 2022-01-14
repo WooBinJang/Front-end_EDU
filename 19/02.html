@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function Student(name, age) {
+        this.name = name;
+        this.age = age;
+      }
+      Student.prototype.gender = "남";
+      var student1 = new Student("Lee", 20);
+
+      console.log(student1.gender);
+      // 1. 내가 가지고 있는지 ??
+      // 2. 내 부모의 프로토타입이 가지고 있는지 ??
+      // 3. 부모의 부모 프로토타입이 가지고 있는지 ....
+
+      var num = [1, 2, 3, 4, 5, 6];
+      // var num = Array(1, 2, 3, 4, 5, 6);
+      console.log(Array.prototype);
+    </script>
+  </body>
+</html>

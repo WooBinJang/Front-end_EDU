@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var str1 = "<h1>::특별가 - 99,000원:::</h1>";
+      var result1 = str1.replace(/h1/g, "h3");
+      console.log(result1);
+      var result2 = str1.replace(/[가-힣]/g, "");
+      console.log(result2);
+      var result3 = str1.replace(/[0-9]/g, "");
+      console.log(result3);
+      var result4 = str1.replace(/-/g, "");
+      console.log(result4);
+      var txt1 = /[a-z0-9]{7,14}$/g;
+    </script>
+  </body>
+</html>
