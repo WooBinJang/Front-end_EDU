@@ -9,7 +9,7 @@ $(".top_menu ,.inner h1 ,.mainvisual,.search_box").on(
 );
 
 $(".btn_search").on("click", function () {
-  $(".search_box").toggle();
+  $(".search_box").show();
 });
 
 $(".search_close_btn").on("click", function () {
