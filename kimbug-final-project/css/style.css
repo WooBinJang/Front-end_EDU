@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Reset CSS */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+textarea {
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+}
+
+button:focus,
+button:active,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  box-shadow: none;
+  outline: none;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2b292d;
+  letter-spacing: -0.01em;
+}
+
+/*  Custom Grid System - Fix container width */
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 960px !important;
+  }
+}
+.randing {
+  background-color: #fdded8;
+  padding: 154px 15px;
+  text-align: center;
+}
+
+.randing .randing-title {
+  font-size: 40px;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  margin-bottom: 24px;
+}
+.randing p {
+  margin-bottom: 24px;
+}
+.randing .pc-p {
+  display: none;
+}
+.randing .btn-group {
+  display: flex;
+  justify-content: center;
+}
+.randing .apply-btn {
+  background-color: #3040c4;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: -0.05em;
+  line-height: 1.6;
+  border-radius: 2px;
+  font-weight: bold;
+  padding: 12px 35px 12px 34px;
+  margin-right: 4px;
+}
+
+.randing .btn-group .more-btn {
+  background-color: #fff;
+  color: #3040c4;
+  font-size: 15px;
+  letter-spacing: -0.005em;
+  line-height: 1.6;
+  font-weight: bold;
+  padding: 12px 35px;
+  margin-left: 4px;
+  border-radius: 2px;
+}
+
+/* service */
+.service {
+  background-color: #f4f5f7;
+}
+.service-content {
+  padding: 80px 15px;
+}
+.service .service-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -0.04em;
+  text-align: left;
+  margin-bottom: 16px;
+}
+.service .service-content .service-content-top > p {
+  margin-bottom: 40px;
+}
+
+/* Program */
+.program {
+  padding: 80px 15px;
+}
+
+.program .program-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #009b4d;
+  margin-bottom: 8px;
+}
+
+.program .program-title-sub {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.program .program-des {
+  margin-bottom: 32px;
+}
+.program .program-img-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.program .program-img {
+  align-items: center;
+}
+
+.program .program-img-des {
+  display: block;
+  font-size: 18px;
+
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+/* >= 768xp Desktop */
+@media screen and (min-width: 768px) {
+  /* Reset CSS */
+
+  .randing {
+    padding: 120px 0;
+  }
+  .randing .randing-title {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: -0.05em;
+    margin-bottom: 32px;
+  }
+
+  p {
+    font-size: 22px;
+    line-height: 1.36363636;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+  .randing .phone-p {
+    display: none;
+  }
+  .randing .pc-p {
+    display: block;
+    margin-bottom: 32px;
+  }
+  .randing .apply-btn {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.05em;
+    padding: 14px 38px;
+    margin-right: 8px;
+  }
+
+  .randing .btn-group .more-btn {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.05em;
+    padding: 14px 38px;
+    margin-left: 8px;
+    border-radius: 2px;
+  }
+
+  .service-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+  }
+
+  .service-content-top {
+    margin-right: 110px;
+  }
+
+  .service .service-title {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: -0.04em;
+    text-align: left;
+  }
+
+  .service .service-content p {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.01em;
+    text-align: left;
+  }
+  .service .service-content .service-content-top > p {
+    margin-bottom: 0;
+  }
+}
