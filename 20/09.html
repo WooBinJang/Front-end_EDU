@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="box"></div>
+    <script>
+      var a = `오늘은
+       월요일
+       입니다`;
+      // 엔터키로 줄 바꿈 가능
+      console.log(a);
+
+      var dayList = "월요일";
+      var txt = `오늘은 ${dayList} 입니다.`;
+      // 문자 중간에 변수 삽입 가능 ${변수명}
+
+      console.log(txt);
+
+      var elm1 = `<h1>
+                     <i>${dayList}</i>
+                   </h1>`;
+      document.querySelector("#box").innerHTML = elm1;
+
+      var txt2 = "홍길동";
+      function txtBox(a, b) {
+        console.log(a); // 첫번째 인자는 String 요소를 배열로 가져옴
+        console.log(b); // 두번째 인자는 변수를 가져옴
+        return 10;
+      }
+      console.log(txtBox`안녕하세요 ${txt2} 입니다.`);
+
+      var dog = 20;
+      var cat = 10;
+
+      function animal(a, b, c) {
+        return a[0] + b + a[1] + c;
+      }
+      console.log(animal`강아지 ${dog} 고양이 ${cat}`);
+    </script>
+  </body>
+</html>

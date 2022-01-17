@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function fnc1(a, b = 2 * a) {
+        console.log(a + b); // 3 + 6
+      }
+      fnc1(3);
+
+      function num() {
+        return 50;
+      }
+
+      function fnc2(a, b = num()) {
+        console.log(a + b); // 3 + 50
+      }
+      fnc2(3);
+    </script>
+  </body>
+</html>
