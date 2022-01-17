@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var a = 20;
+      let b = 10;
+      const c = 30;
+      a = 10;
+      b = 20;
+      // c = 40;
+      // const : 재할당 불가능
+      // error : Assignment to constant variable.
+
+      const obj = {
+        name: "kim",
+        age: 50,
+      };
+      // const : Array 또는 Object로 선언 시 요소 추가 삭제등은 가능
+      obj.name = "jang"; // 변경
+      obj.address = "서울"; // 추가
+      console.log(obj);
+      // return : {name: 'jang', age: 27, address: '서울'}
+
+      Object.freeze(obj); // object객체의 메소드 변화 불가
+      obj.name = "lee";
+      console.log(obj);
+      // return : {name: 'jang', age: 27, address: '서울'}
+
+      console.log(num1); // return : undefined
+      // console.log(num2); // error
+      // console.log(num3); // error
+      var num1 = 50;
+      let num2 = 50;
+      const num3 = 50;
+    </script>
+  </body>
+</html>

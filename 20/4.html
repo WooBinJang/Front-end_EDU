@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      fnc1();
+      function fnc1() {
+        //console.log(hi); // error
+        let hi = "안녕하세요";
+      }
+
+      fnc2();
+      function fnc2() {
+        console.log(hi); // return : undefined
+        var hi = "안녕하세요";
+      }
+
+      //fnc3(); // error :  fnc3 is not a function
+      // 호이스팅은 변수 선언문만 읽어 오고 할당된 값은 가져오지 않는다.
+      var fnc3 = function () {
+        console.log(hi); // error
+        var hi = "안녕하세요";
+      };
+
+      let a = 10;
+      var fnc3 = function () {
+        a = 20;
+      };
+      console.log(a);
+
+      let aa = 1;
+      var bb = 2;
+      window.aa = 3;
+      window.bb = 4;
+      console.log(aa); /// return : 1
+      console.log(bb); // return : 4
+    </script>
+  </body>
+</html>

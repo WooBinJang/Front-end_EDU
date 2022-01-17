@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function fnc1() {
+        if (true) {
+          var a = "kim";
+          let b = "jang";
+          let c = "lee";
+          //   var : 함수 딘위
+          // let, const : 블록 단위
+        }
+        console.log(a);
+        // console.log(b); error
+        // console.log(c); error
+      }
+
+      //  console.log(a); error
+      fnc1();
+
+      if (true) {
+        let a = 10;
+        var b = 20;
+        if (true) {
+          let b = 30;
+        }
+        console.log(b); // return :20
+        // let : 블록 단위 {} 안에서 선언하면 {}안에서만 사용 가능
+      }
+
+      if (true) {
+        let a = 10;
+        var b = 20;
+        // let b = 40; error
+        if (true) {
+          let b = 30;
+        }
+        console.log(b); // return :20
+      }
+
+      var userId = "Kim";
+      console.log(userId); // return : "Kim"
+      console.log(window.userId); // return : "Kim"
+      //var 키워드로 만든 전역변수는 window에도 보관된다
+
+      window.userAge = 60; // 전역변수 만들기
+      console.log(window.userAge); // return : 60
+    </script>
+  </body>
+</html>

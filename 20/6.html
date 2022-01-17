@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .btn {
+        width: 100px;
+        height: 50px;
+        margin: 10px;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin: 20px;
+        display: none;
+        font-size: 20px;
+        color: #fff;
+      }
+
+      .box.on {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn">버튼1</button>
+    <button class="btn">버튼2</button>
+    <button class="btn">버튼3</button>
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <script>
+      var btn = document.querySelectorAll(".btn");
+      var box = document.querySelectorAll(".box");
+      for (let i = 0; i < btn.length; i++) {
+        btn[i].addEventListener("click", function () {
+          box[i].classList.toggle("on");
+        });
+      }
+    </script>
+  </body>
+</html>
