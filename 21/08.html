@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <script>
+      class Cat {
+        constructor(a, b) {
+          this.type = a;
+          this.color = b;
+          this.age = 1;
+        }
+        set setAge(age) {
+          this.age = age;
+        }
+        get getAge() {
+          return this.age;
+        }
+      }
+
+      var cat1 = new Cat("페르시안", "white");
+      cat1.setAge = 10;
+      console.log(cat1);
+      var cat2 = new Cat("러시안블루", "grey");
+
+      console.log(cat2);
+      class Dog extends Cat {
+        constructor(a, b, c) {
+          super(a, b);
+          this.gender = c;
+        }
+      }
+      var dog = new Dog("말티즈", "white", "여");
+      console.log(dog);
+    </script>
+  </body>
+</html>

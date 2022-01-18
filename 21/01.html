@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>arguments rest</title>
+  </head>
+  <body>
+    <script>
+      function sum(a, b, c) {
+        for (let i = 0; i < arguments.length; i++) {
+          //console.log(arguments[i]);
+        }
+      }
+      sum(1, 2, 3);
+      //함수의 arguments
+      //함수의 모든 파라미터를 저장하는 객체
+
+      function sum2(a, b, c, ...d) {
+        console.log(d);
+      }
+      sum2("a", "b", "c", 1, 2, 3);
+      // 함수의 rest
+    </script>
+  </body>
+</html>

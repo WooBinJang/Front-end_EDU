@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>data type</title>
+  </head>
+  <body>
+    <script>
+      var nmae = "홍길동"; // primitive data type
+      var age = 50; // primitive data type
+
+      var people1 = "김철수";
+      var people2 = people1;
+      people1 = "박순철";
+      console.log(people1, people2); //박순철 김철수
+
+      var person1 = {
+        name: "김철수",
+      };
+      // reference data type
+      var person2 = person1;
+      person1.name = "박순철";
+      console.log(person1, person2); // 박순철 박순철
+      console.log(person1 == person2); // true
+      // reference data type
+      // 값을 참조 하기 때문에 값이 공유 된다.
+      // 공유를 방지하기위해 생성자를 사용하는 것이다.
+
+      var name1 = { nmae: "김철수" };
+      var name2 = { nmae: "김철수" };
+      console.log(name1 == name2); // false
+      // 같은 값이지만 다른 것을 참조하기 때문에 false
+
+      var name3 = { name: "홍길동" };
+      function cng(obj) {
+        obj = { name: "박순철" };
+      }
+      cng(name3);
+      console.log(name3);
+    </script>
+  </body>
+</html>

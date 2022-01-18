@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>class</title>
+  </head>
+  <body>
+    <script>
+      class item {
+        constructor(a, b) {
+          this.title = a;
+          this.price = b;
+          this.hi = function () {
+            console.log("안녕하세요" + this.title);
+          };
+          //클레스를 통해 생성되는 객체에 함수 생성
+        }
+        hello() {
+          console.log("반갑습니다");
+        } //프로토타입에 함수 생성
+        wellcome() {
+          console.log("방문해주셔서 감사합니다");
+        }
+      }
+      var item1 = new item("Tee", 5000);
+      console.log(item1);
+      item1.hello();
+      console.log(Object.getPrototypeOf(item1));
+    </script>
+  </body>
+</html>

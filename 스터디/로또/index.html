@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+
+    <title>로또</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header-title">행운의 로또</h1>
+      </header>
+      <main>
+        <section class="input-box">
+          <h2 class="input-title">구입할 금액을 입력해주세요</h2>
+          <div class="input-money-box">
+            <input type="number" placeholder="구입 금액" />
+            <button type="button" class="input-money-btn">구매</button>
+          </div>
+          <!-- input-money-box -->
+        </section>
+        <section class="main-content-box">
+          <div class="main-content-box-header">
+            <button type="button">번호보기</button>
+          </div>
+          <!--main-content-box-header  -->
+          <div class="lotto-count">
+            <span>총 <strong></strong> 개 구매하였습니다.</span>
+          </div>
+          <!--lotto-count  -->
+          <div class="my-lotto">
+            <div class="my-lotto-item">
+              <img src="./assets/lotto.png" alt="#" class="lotto-img" />
+              <span class="my-lotto-nums">24, 25, 27, 29, 32, 33</span>
+            </div>
+            <!-- my-lotto-item -->
+          </div>
+          <!--my-lotto  -->
+          <div class="winning-lotto">
+            <div class="winning-lotto-img-box">
+              <img src="./assets/lotto.png" alt="#" class="lotto-img" />
+            </div>
+            <!-- winning-lotto-img-box -->
+            <h3 class="date">958회차 당첨번호 2021.04.10</h3>
+            <div class="winning-lotto-nums">
+              <span>24, 25, 27, 29, 32, 33</span>
+              <span class="bonus-num">+ 보너스 번호 01</span>
+            </div>
+            <!-- "winning-lotto-nums -->
+          </div>
+          <!-- winning-lotto -->
+        </section>
+      </main>
+      <footer>
+        <button type="button">당첨결과 확인하기</button>
+      </footer>
+    </div>
+    <script src="./libs/jquery-3.4.1.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

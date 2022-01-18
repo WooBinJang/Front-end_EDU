@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>extends</title>
+  </head>
+  <body>
+    <script>
+      class big {
+        constructor(price) {
+          this.title = "tee";
+          this.price = price;
+        }
+        hi() {
+          console.log("오늘의 히트 상품 소개");
+        }
+      }
+
+      class small extends big {
+        constructor(price) {
+          super(price);
+          // big에서 상속 받은 price는 다시 선언하고 초기화 할 필요가 없다
+          // extends로 상속 받은 big의 클래스의 constructuor를 의미 한다.
+          this.c = 600;
+        }
+        hi2() {
+          console.log("hi2 실행 : ");
+          super.hi();
+        }
+      }
+      var sub = new small(6000);
+      console.log(sub);
+      // console.log(sub.hi());
+      sub.hi();
+      /*
+       hi() 함수를 찾는 순서
+       1. sub 에 있는지
+       2. small의 프로토타입에 있는지
+       3  big의 프로토타입에 있는지
+       */
+    </script>
+  </body>
+</html>
