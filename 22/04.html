@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Set</title>
+  </head>
+  <body>
+    <script>
+      var famList = new Set(["john", "tom", "andy", "tom"]);
+      famList.add("jane");
+      console.log(famList);
+      console.log(famList.size);
+      console.log(famList.has("bob"));
+      console.log(famList.has("tom"));
+
+      // Array -> Set 으로 변경
+      var itemList = ["c10", "c20", "c30", "c30", "c40", "c50"];
+      var itemList2 = new Set(itemList);
+      console.log(itemList2);
+      var itemList3 = Array.from(itemList2);
+      console.log(itemList3);
+    </script>
+  </body>
+</html>

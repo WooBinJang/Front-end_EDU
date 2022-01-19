@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>for of Symbol</title>
+  </head>
+  <body>
+    <script>
+      var arr1 = [1, 2, 3, 4, 5, 6];
+      for (let x of arr1) {
+        console.log(x);
+      }
+
+      var symbol_1 = Symbol("새로만든 심볼1");
+
+      var person = { name: "kim", [symbol_1]: 11 };
+      person.height = 170;
+      person.weight = 100;
+      person.age = 50;
+      var realAge = Symbol("나의 나이");
+      person[realAge] = 25;
+      for (let i in person) {
+        console.log(person[i]);
+        // Symbol로 처리된 key와 value는 나오지 않는다.
+      }
+    </script>
+  </body>
+</html>

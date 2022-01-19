@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>promise</title>
+  </head>
+  <body>
+    <img src="./assets/animal1.jpg" alt="" id="test" />
+    <script>
+      var imgLoding = new Promise(function (resolve, reject) {
+        var img = document.querySelector("#test");
+        img.addEventListener("load", function () {
+          setTimeout(resolve, 5000);
+        });
+
+        img.addEventListener("error", function () {
+          reject();
+        });
+      }); //
+
+      imgLoding
+        .then(function () {
+          console.log("이미지 로딩 성공");
+        })
+        .then(function () {
+          setTimeout(function () {
+            console.log("이미지 로딩 성공 다음에 출력");
+          }, 3000);
+        })
+        .catch(function () {
+          console.log("이미지 로딩 실패");
+        });
+
+      // 5초 후 5초 대기 성공 했습니다.
+      var loding = new Promise(function (resolve, reject) {
+        setTimeout(resolve, 5000);
+      });
+      loding.then(function () {
+        console.log(" 5초 대기 성공 했습니다.");
+      });
+    </script>
+  </body>
+</html>

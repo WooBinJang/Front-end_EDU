@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map</title>
+  </head>
+  <body>
+    <script>
+      var person = new Map();
+      person.set("name", "kim");
+      person.set("age", 11);
+      person.set([1, 2, 30], "Leee");
+      console.log(person);
+
+      var person2 = new Map([
+        ["name", "song"],
+        ["age", 30],
+      ]);
+      console.log(person2);
+      person2.delete("age");
+      person2.set("gender", "male");
+      console.log(person2);
+      console.log(person2.size);
+      console.log(person2.get("gender"));
+    </script>
+  </body>
+</html>
