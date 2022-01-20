@@ -1,28 +1,21 @@
 import React from "react";
-let ulStyle = {
-  display: "flex",
-  justifyContent: "space-around",
-  marginBottom: "20px",
-};
-function Nav() {
+import PropTypes from "prop-types";
+
+function Nav({ calendar, color, day, month }) {
   return (
-    <nav>
-      <ul style={ulStyle}>
-        <li>
-          <a href="#">메뉴 1</a>
-        </li>
-        <li>
-          <a href="#">메뉴 2</a>
-        </li>
-        <li>
-          <a href="#">메뉴 3</a>
-        </li>
-        <li>
-          <a href="#">메뉴 4</a>
-        </li>
-      </ul>
-    </nav>
+    <div>
+      <h1 style={{ color }}>오늘은 {calendar}일 입니다</h1>
+      <h2>오늘은 {day} 입니다.</h2>
+      {month ? "☆" : "★"}
+      <h2>이번달은 {month} 입니다.</h2>
+    </div>
   );
 }
-
+Nav.defaultProps = {
+  calendar: "휴일",
+};
+Nav.propTypes = {
+  month: PropTypes.number.isRequired,
+};
+// props type check
 export default Nav;
