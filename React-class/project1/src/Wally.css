@@ -1,0 +1,84 @@
+.wally-app {
+  text-align: center;
+  background: url("./img/bg.png") no-repeat fixed center bottom / cover;
+  margin: 0;
+}
+
+.logo {
+  background: url("./img/logo.png") no-repeat;
+  width: 180px;
+  height: 180px;
+  margin: 40px;
+  font-size: 0;
+}
+
+.wally {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 280px;
+  transform: translateX(-50%);
+}
+
+.wally .face {
+  background: url("./img/face.png") no-repeat;
+  width: 100px;
+  height: 130px;
+  position: relative;
+  top: 80px;
+  left: 130px;
+  z-index: -1;
+}
+
+.wally .face.on {
+  background-position: bottom right;
+}
+
+.wally .body {
+  background: url("./img/body.png") no-repeat;
+  width: 280px;
+  height: 320px;
+}
+
+.wally .leg {
+  background: url("./img/leg.png") no-repeat bottom left;
+  width: 280px;
+  height: 170px;
+}
+
+.control {
+  width: 180px;
+  height: 180px;
+  margin: 40px;
+  border-radius: 100%;
+  background-color: #d6423e;
+  position: relative;
+}
+.control span {
+  background: url("./img/arrow.png") no-repeat top center;
+  display: block;
+  width: 180px;
+  height: 25px;
+  padding: 20px 0;
+  opacity: 0.8;
+  background-clip: content-box;
+  background-origin: content-box;
+}
+.control span.arr-bottom {
+  background-position: bottom center;
+  position: absolute;
+  bottom: 0;
+}
+
+.control .height {
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 20px;
+  color: #d6423e;
+  font-size: 25px;
+  font-family: "arial";
+  text-align: center;
+}

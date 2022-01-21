@@ -43,3 +43,21 @@
 
     - 동적으로 값을 변경 할 수 있다.
     - useState 함수 컴포넌트를 사용
+
+# map()
+
+    - Array.map(function(a,b,c) {})
+    a : 요소 / b : index / c : Array 전체
+
+# class형 components
+
+    # state 생성
+    - constructor(){} 안에 state를 만든다.
+    - this.state ={ 키 : 기본값}
+    - 그 값을 꺼내 올때 this.state.값
+
+    # state 변경
+    - this.setState(변경값)
+
+    # render()
+    - render() 함수가 jsx 부분을 반환
