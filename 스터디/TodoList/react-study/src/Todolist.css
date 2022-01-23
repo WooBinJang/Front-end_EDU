@@ -75,6 +75,7 @@
 }
 
 .todo li {
+  position: relative;
   height: 30px;
   line-height: 30px;
   padding: 8px 0;
@@ -84,4 +85,30 @@
 
 .todo list-style :hover {
   background-color: rgba(255, 255, 255, 0.5);
+}
+.todo .list-item-del-btn {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  background-color: #369;
+  border: none;
+  color: #fff;
+  font-size: 10px;
+  width: 100px;
+  height: 35.5px;
+  vertical-align: middle;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.todo .list-item.on {
+  color: rgb(241, 89, 89);
+  font-weight: bold;
+}
+
+.todo .list-item.on::after {
+  content: "✨";
+  position: relative;
+  left: 10px;
 }
