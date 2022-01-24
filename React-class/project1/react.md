@@ -61,3 +61,18 @@
 
     # render()
     - render() 함수가 jsx 부분을 반환
+
+# useEffect()
+
+    - useEffect(()=>{ 마운팅될때 실행할 값 return 언마운트 될때 값},[])
+    - 마운팅 -> 업데이트 -> 언마운트
+
+# useRef()
+
+    - DOM에 접근해야 할때 사용
+    - 스크롤, DOM 크기, 무비플레이어, 케러셀 ... 외부라이브러리
+    - input, textarea
+
+# context()
+
+    - 전역으로 값을 사용 할 수 있게 해주는

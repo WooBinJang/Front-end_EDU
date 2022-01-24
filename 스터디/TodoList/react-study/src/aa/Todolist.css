@@ -44,6 +44,10 @@
   color: #336699;
   padding-right: 10px;
 }
+.write label.on {
+  color: red;
+  font-weight: bold;
+}
 
 .write .todo-field-box {
   margin: 0;
@@ -82,15 +86,14 @@
 .todo list-style :hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
-
-.list-item-del-btn {
+.todo .list-item-del-btn {
   position: absolute;
-  right: 15px;
   top: 50%;
+  right: 15px;
   transform: translateY(-50%);
   background-color: #369;
   border: none;
-  color: red;
+  color: #fff;
   font-size: 10px;
   width: 100px;
   height: 35.5px;
@@ -99,18 +102,13 @@
   border-radius: 5px;
 }
 
-.list-item > span {
-  text-indent: -99999999999px;
-  position: absolute;
-  top: 50%;
-  left: 15px;
-  transform: translateY(-50%);
-  display: inline-block;
-  background: url("./img/check.png") no-repeat 0 0;
-  width: 30px;
-  height: 30px;
-  font-size: 0;
+.todo .list-item.on {
+  color: rgb(241, 89, 89);
+  font-weight: bold;
 }
-.list-item > span.on {
-  background-position-x: -30px;
+
+.todo .list-item.on::after {
+  content: "✨";
+  position: relative;
+  left: 10px;
 }

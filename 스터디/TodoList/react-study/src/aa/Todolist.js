@@ -2,12 +2,11 @@ import React, { useEffect, useRef, useState } from "react";
 import "./Todolist.css";
 
 function Todolist() {
-  const nextId = useRef(0);
-
+  // let [todoList, todoListUpdate] = useState(["오늘의 할 일을 입력하세요"]);
   let [todoList, todoListUpdate] = useState([
     {
       text: "오늘의 할 일을 입력하세요", // 내용
-      id: nextId.current,
+      id: 0, // index
       state: 0, // 색
       must: false, // 강조
     },
@@ -34,18 +33,16 @@ function Todolist() {
 
     arrList.push({
       text: todoInput,
-      id: nextId.current,
+      id: arrList.length,
       state: 0,
       must: todoStrong,
     });
-
-    nextId.current += 1;
 
     todoListUpdate(arrList);
 
     todoInputUpdate(""); // 입력 후 빈값 만들기
   };
-
+  console.log(todoList);
   // 글자 입력 시 입력값을 저장하는 이벤트
   let todoInputChg = (e) => {
     todoInputUpdate(e.target.value);
@@ -57,9 +54,10 @@ function Todolist() {
   };
 
   // todolist 삭제
-  let tododelete = (index) => {
-    const arr = [...todoList];
-    todoListUpdate(arr.filter((x) => x.id !== index));
+  let tododelete = (e) => {
+    let li = e.target.parentElement;
+    li.remove();
+    // html tag 는 삭제 되지만 todolist에 있는 요소 자체는 남아 있음
   };
 
   // li 영역 클릭 시 3단계의 변화를 준다. (3번을 초과하면 다시 초기상태로) 진행상태 표시
@@ -97,11 +95,11 @@ function Todolist() {
       <div className="note">
         <h1>2022 Planner</h1>
         <ul className="todo">
-          {todoList.map((todoItem) => {
+          {todoList.map((todoItem, index) => {
             return (
               <li
                 className={todoItem.must ? "list-item on" : "list-item"}
-                key={todoItem.id}
+                key={index}
                 onClick={todoStateChg}
               >
                 <span>🔴</span>
@@ -109,9 +107,7 @@ function Todolist() {
                 <button
                   type="button"
                   className="list-item-del-btn"
-                  onClick={() => {
-                    tododelete(todoItem.id);
-                  }}
+                  onClick={tododelete}
                 >
                   삭제
                 </button>

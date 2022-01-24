@@ -1,50 +1,46 @@
-import React, { useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
+import Input from "./Input";
+import Todo from "./Todo";
 import "./Todolist.css";
+export const UpdateContext = createContext();
 
 function Todolist() {
   let [todoList, todoListUpdate] = useState(["오늘의 할 일을 입력하세요"]);
   let [todoInput, todoInputUpdate] = useState("");
+
+  let arrList = [...todoList];
   let todo = () => {
-    let arrList = [...todoList];
-    for (let x of arrList) {
-      if (x === "오늘의 할 일을 입력하세요") {
-        arrList.pop();
-      }
+    if (todoInput === "") {
+      alert("오늘의 할 일을 입력해 주세요.");
+      return false;
     }
-    arrList.unshift(todoInput);
+    arrList.push(todoInput);
     todoListUpdate(arrList);
+  };
+
+  let todoCheckFnc = (e) => {
+    e.target.classList.toggle("on");
   };
 
   return (
     <div className="todolist-app">
-      <div className="note">
-        <h1>2022 Planner</h1>
-        <ul className="todo">
-          {todoList.map((a, index) => {
-            return (
-              <li className="list-item" key={index}>
-                {a}
-              </li>
-            );
-          })}
-        </ul>
-        <div className="write">
-          <div className="todo-form">
-            <label htmlFor="todo-field">+Must</label>
-            <input
-              type="text"
-              id="todo-field"
-              className="todo-field-box"
-              onChange={(e) => {
-                todoInputUpdate(e.target.value);
-              }}
+      <UpdateContext.Provider value={arrList}>
+        <div className="note">
+          <h1>2022 Planner</h1>
+          <Todo
+            todoList={todoList}
+            todoListUpdate={todoListUpdate}
+            todoCheckFnc={todoCheckFnc}
+          />
+          <div className="write">
+            <Input
+              todo={todo}
+              todoList={todoList}
+              todoInputUpdate={todoInputUpdate}
             />
-            <button className="submit" onClick={todo}>
-              ADD
-            </button>
           </div>
         </div>
-      </div>
+      </UpdateContext.Provider>
     </div>
   );
 }
