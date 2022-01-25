@@ -36,15 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-/* 헤더 */
-.navbar-brand {
-  margin-right: 100px !important;
-}
-.FooterSection {
-  background-color: #000;
-  color: #fff;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-top: 20px;
-}

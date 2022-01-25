@@ -1,13 +1,30 @@
 import "./App.css";
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
+import HeaderSection from "./HeaderSection";
+import MainBannerSection from "./MainBannerSection";
+import ContentsSection from "./ContentsSection";
+import BottomBannerSection from "./BottomBannerSection";
+import FooterSection from "./FooterSection";
+import { Route } from "react-router-dom";
+import News from "./News";
 
-import AlertUi from "./AlertUi";
 function App() {
   return (
     <div className="App">
-      <h1>리액트스트랩으로 UI 만들기</h1>
-      <AlertUi />
+      <HeaderSection />
+      <Route exact path="/">
+        <MainBannerSection />
+        <ContentsSection />
+        <BottomBannerSection />
+      </Route>
+      <Route path="/news">
+        <News />
+      </Route>
+      <Route path="/news/:code1">
+        <News />
+      </Route>
+      <FooterSection />
     </div>
   );
 }
