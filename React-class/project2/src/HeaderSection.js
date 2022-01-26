@@ -42,6 +42,20 @@ function HeaderSection() {
             </NavItem>
           </Nav>
         </Collapse>
+        <ul>
+          <li>
+            <Link to="/news/news01">뉴스1</Link>
+          </li>
+          <li>
+            <Link to="/news/news02">뉴스2</Link>
+          </li>
+          <li>
+            <Link to="/news/news03">뉴스3</Link>
+          </li>
+          <li>
+            <Link to="/news/news04">뉴스4</Link>
+          </li>
+        </ul>
       </Navbar>
     </div>
   );

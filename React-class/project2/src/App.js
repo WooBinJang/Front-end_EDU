@@ -8,6 +8,7 @@ import BottomBannerSection from "./BottomBannerSection";
 import FooterSection from "./FooterSection";
 import { Route } from "react-router-dom";
 import News from "./News";
+import NotFound from "./NotFound";
 
 function App() {
   return (
@@ -18,11 +19,14 @@ function App() {
         <ContentsSection />
         <BottomBannerSection />
       </Route>
-      <Route path="/news">
+      <Route path="/news/:news">
         <News />
       </Route>
-      <Route path="/news/:code1">
+      {/* <Route path="/news/:code1">
         <News />
+      </Route> */}
+      <Route>
+        <NotFound />
       </Route>
       <FooterSection />
     </div>
