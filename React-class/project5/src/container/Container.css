@@ -1,0 +1,9 @@
+.bbs1 {
+  border: 1px solid #333;
+  border-collapse: collapse;
+  text-align: center;
+}
+.bbs1 th,
+.bbs1 td {
+  border: 1px solid #333;
+}

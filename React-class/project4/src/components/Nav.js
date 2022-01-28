@@ -12,7 +12,9 @@ function Nav() {
         onClick={() => {
           navigate("/");
         }}
-      ></h1>
+      >
+        Hnm
+      </h1>
       <i
         className="fas fa-shopping-cart"
         onClick={() => {
