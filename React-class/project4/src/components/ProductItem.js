@@ -17,7 +17,6 @@ function ProductItem({ item }) {
           items.map((x) => {
             if (x.id === item.id) {
               setCartCheck(false);
-              alert("이미 장바구니에 담긴 상품입니다.");
             }
           });
           if (cartCheck) {
