@@ -22,11 +22,12 @@ const Container = () => {
   const onSave = (saveData) => dispatch(boardSave(saveData));
   //dispatch -> action 생성 함수 실행
 
-  const { selectRowData } = useSelector((state) => state.boardReducer); //
+  const { selectRowData } = useSelector((state) => state.boardReducer);
   //boardReducer의 object의 selectRowData
 
   const { boards } = useSelector((state) => state.boardReducer);
   //boardReducer의 object의 boards
+
   //화면 관련 함수
   const onRowClick = (boardId) => {
     dispatch(boardSelectRow(boardId));

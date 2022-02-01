@@ -9,6 +9,9 @@ import { Provider } from "react-redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 
 const store = createStore(rootReducer, composeWithDevTools());
+// createStore() : 스토어 생성
+// composeWithDevTools() : 크롬 앱 연동
+
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
