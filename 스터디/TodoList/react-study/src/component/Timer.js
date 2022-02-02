@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import "./Timer.css";
 export default function App() {
   const [day, setDay] = useState("0000.00.00.000");
   const [timer, setTimer] = useState("00:00:00");
@@ -24,7 +24,7 @@ export default function App() {
     } else if (date.getDay() === 6) {
       day = "Sat";
     }
-    const month = (date.getMonth() + 1).toString().padStart(2, "0"); // 월
+    const month = (date.getMonth() + 1).toString().padStart(2, "0"); // 월 1
     const hour = date.getHours().toString().padStart(2, "0"); // 시
     const min = date.getMinutes().toString().padStart(2, "0"); // 분
     const sec = date.getSeconds().toString().padStart(2, "0"); //초

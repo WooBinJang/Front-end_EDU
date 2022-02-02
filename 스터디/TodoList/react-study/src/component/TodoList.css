@@ -1,0 +1,68 @@
+.TodoList {
+  position: absolute;
+  left: 30px;
+  top: 200px;
+  width: 500px;
+  height: 800px;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 30px;
+}
+
+.TodoList h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.TodoList .todo-input-box {
+  display: flex;
+  margin-bottom: 20px;
+}
+.TodoList .todo-input-box input {
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+.TodoList .todo-input-box input:focus {
+  outline: none;
+}
+
+.TodoList .todo-input-box button {
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+.TodoList .todo-item {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.TodoList .todo-item.check {
+  text-decoration: line-through;
+}
+.TodoList .todo-item span {
+  margin-right: 20px;
+  color: #fff;
+}
+.TodoList .del-btn {
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: transparent;
+  color: rgb(233, 133, 133);
+  font-weight: bold;
+}
+
+.TodoList .check-btn {
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: transparent;
+  color: rgb(44, 101, 206);
+  font-weight: bold;
+}

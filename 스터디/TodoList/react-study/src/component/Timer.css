@@ -1,0 +1,16 @@
+.Timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.Timer > h1 {
+  font-size: 80px;
+}
+
+.Timer > h2 {
+  font-size: 60px;
+}

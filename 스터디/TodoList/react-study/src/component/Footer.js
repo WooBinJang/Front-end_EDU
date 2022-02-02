@@ -1,9 +1,10 @@
 import React from "react";
-function Footer() {
+import "./Footer.css";
+function Footer({ say }) {
   return (
     <footer className="Footer">
-      <h2>명언1</h2>
-      <h3>명언한 사람</h3>
+      <h2>{say.say}</h2>
+      <h3>- {say.name}</h3>
     </footer>
   );
 }

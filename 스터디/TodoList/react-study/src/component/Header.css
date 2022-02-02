@@ -1,0 +1,21 @@
+.Header {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 30px;
+}
+
+.Header > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+.Header > ul > li {
+  margin-right: 100px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.Header > ul > li:hover {
+  color: rgb(207, 166, 166);
+}

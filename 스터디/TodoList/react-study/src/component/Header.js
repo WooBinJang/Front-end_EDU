@@ -1,14 +1,32 @@
 import React from "react";
-function Header() {
+import "./Header.css";
+function Header({ bgChg, sayChg, todoOpenCng }) {
   return (
     <nav className="Header">
       <ul>
-        <li>
+        <li
+          onClick={() => {
+            bgChg();
+          }}
+        >
           change
           <br /> background
         </li>
-        <li>TodoList</li>
-        <li>reset</li>
+        <li
+          onClick={() => {
+            sayChg();
+          }}
+        >
+          change
+          <br /> saying
+        </li>
+        <li
+          onClick={() => {
+            todoOpenCng();
+          }}
+        >
+          TodoList
+        </li>
       </ul>
     </nav>
   );

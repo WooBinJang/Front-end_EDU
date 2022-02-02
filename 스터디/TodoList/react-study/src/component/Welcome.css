@@ -1,0 +1,28 @@
+.Welcome {
+  display: flex;
+  justify-content: center;
+}
+
+.Welcome input {
+  padding: 20px 40px;
+  font-size: 30px;
+  border: none;
+}
+.Welcome input:focus {
+  outline: none;
+}
+
+.Welcome input.on {
+  color: red;
+}
+
+.Welcome button {
+  padding: 20px 40px;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+}
+.Welcome h3 {
+  color: #fff;
+  font-size: 50px;
+}
