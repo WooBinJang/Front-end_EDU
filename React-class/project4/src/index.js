@@ -10,6 +10,8 @@ import rootReducer from "./store/reducers/";
 import { Provider } from "react-redux";
 
 const store = createStore(rootReducer);
+//redux 세팅
+
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
