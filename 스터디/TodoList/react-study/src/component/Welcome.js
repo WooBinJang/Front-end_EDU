@@ -8,7 +8,12 @@ function Welcome() {
     todoInputUpdate(e.target.value);
   }
 
-  function wellcomeCng() {
+  function wellcomeCng(e) {
+    console.log("Asd");
+    if (e.target.value === "") {
+      alert("이름을 입력하세요.");
+      return;
+    }
     document.getElementById("input-wellcome").readOnly = true;
     setInputCheck(false);
   }

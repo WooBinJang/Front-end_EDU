@@ -51,6 +51,11 @@ function App() {
     "img8.jpg",
     "img9.jpg",
   ];
+
+  useEffect(() => {
+    bgChg();
+    sayChg();
+  }, []);
   const bgChg = (e) => {
     let random = Math.floor(Math.random() * imgs.length);
     let newbg = "/assets/" + imgs[random];

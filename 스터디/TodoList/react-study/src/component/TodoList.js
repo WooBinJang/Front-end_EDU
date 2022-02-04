@@ -20,6 +20,7 @@ function TodoList({ todoOpen }) {
     nextId.current += 1;
     todoListUpdate(arrList);
     setTodoInput("");
+    document.querySelector("#todo").value = "";
   };
 
   function todoInputCng(e) {
@@ -41,7 +42,6 @@ function TodoList({ todoOpen }) {
     }
     todoListUpdate(arr);
   };
-  console.log(todoList);
   return (
     <section>
       {todoOpen ? (
@@ -50,6 +50,7 @@ function TodoList({ todoOpen }) {
             <h1>To-Do List</h1>
             <div className="todo-input-box">
               <input
+                id="todo"
                 type="text"
                 placeholder="write your task"
                 onChange={todoInputCng}
