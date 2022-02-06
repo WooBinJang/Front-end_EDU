@@ -56,6 +56,7 @@ function App() {
     bgChg();
     sayChg();
   }, []);
+  // 첫 렌더링 시 랜덤 백그라운드 이미지와 명언 생성
   const bgChg = (e) => {
     let random = Math.floor(Math.random() * imgs.length);
     let newbg = "/assets/" + imgs[random];

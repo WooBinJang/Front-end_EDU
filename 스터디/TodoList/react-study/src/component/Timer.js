@@ -35,9 +35,11 @@ export default function App() {
   useEffect(() => {
     currentTimer();
   }, []);
+  // 첫 렌더링 시 현재 시간 표시
 
   const startTimer = () => {
     setInterval(currentTimer, 1000);
+    //1초마다 현재시간 표시
   };
 
   startTimer();
