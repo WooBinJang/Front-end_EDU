@@ -11,6 +11,7 @@ import {
 } from "reactstrap";
 
 function HeaderSection() {
+  // 리갱트 라우터
   return (
     <div className="HeaderSection">
       <Navbar color="light" expand="md" light>
