@@ -10,7 +10,6 @@ function AjaxPage() {
           axios
             .get("https://jsonplaceholder.typicode.com/users")
             .then((result) => {
-              // console.log(result.data[0]);
               result.data.forEach((x) => {
                 console.log(x.name);
               });

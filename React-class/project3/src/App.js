@@ -11,6 +11,10 @@ function App() {
   return (
     <div className="App">
       <Routes>
+        {/* 
+      
+    "react-router-dom": "^6.2.1",
+      */}
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/ajax" element={<AjaxPage />} />
