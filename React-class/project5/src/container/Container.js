@@ -56,7 +56,7 @@ const Container = () => {
   return (
     <div>
       <table className="bbs1">
-        <colgroup>
+        <colgroup className="bbs1-colgroup">
           <col style={{ width: "80px" }} />
           <col style={{ width: "100px" }} />
           <col style={{ width: "800px" }} />
